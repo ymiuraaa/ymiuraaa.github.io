@@ -57,7 +57,9 @@ The background in moving simulated robots via Three.js allowed me to quickly lea
 # point cloud ICP
 
 <div>
-    <video autoplay loop muted width="500" height="300" src="/img/icp.gif">
+    <a class="imglink" href="/img/rustsweeper.png" target="_blank" width="100%">
+         <video autoplay loop muted width="500" height="300" src="/img/icp.gif">
+    </a>
 </div>
 <!-- Let's insert a GIF here since that'll look pretty cool-->
 
