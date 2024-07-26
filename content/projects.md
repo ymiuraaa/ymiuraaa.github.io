@@ -31,7 +31,7 @@ Discuss with your roommates what you want the reward to be for doing their chore
     </a>
 </div>
 
-This is mARVin, our autonomous robotic vehicle that we've been working on in the [University of Michigan Autonomous Robotic Vehicle](https://www.umarv.com/), an engineering student organization. I've worked on the integration of sensors for mARVin and used them for [SLAM (Simultaneous Localization and Mapping)](https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping) algorithms in ROS2. We used sensors like IMUs, wheel encoders, and LiDAR. As a sensors lead, in addition to everything I've been doing, I'll be communicating with other subteam leads and getting members to meet other subteam's needs that can be achieved with background in sensors and programming. I also host meetings and mentor new members as well. Lately, we've been collaborating with the navigation team to integrate SLAM algorithms so they can do path planning with the information available from sensors and computer vision. I'm also helping out some navigation team members and leads with our custom simulation software as well.
+This is mARVin, our autonomous robotic vehicle that we've been working on in the [University of Michigan Autonomous Robotic Vehicle](https://www.umarv.com/), an engineering student organization. I've worked on the integration of sensors for mARVin and used them for [SLAM (Simultaneous Localization and Mapping)](https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping) algorithms in ROS2. We used sensors like IMUs, wheel encoders, and LiDAR. <br>As a sensors lead, in addition to everything I've been doing, I'll be communicating with other subteam leads and getting members to meet other subteam's needs that can be achieved with background in sensors and programming. I also host meetings and mentor new members as well. <br>Lately, we've been collaborating with the navigation team to integrate SLAM algorithms so they can do path planning with the information available from sensors and computer vision. I'm also helping out some navigation team members and leads with our custom simulation software as well.
 
 
 ## Web Robot Simulator and Interface
@@ -76,12 +76,13 @@ Iterative Closest Point (ICP) is an perception algorithm where you do pose estim
 
 # Biped Robot Locomotion
 <div>
-    <a class="imglink" href="/img/cassie.mov" target="_blank" width="50%">
+    <a class="imglink" href="/img/cassie-cardio.mov" target="_blank" width="50%">
     <video width="400" controls autoplay>
         <source src="/img/cassie-cardio.mov" type="video/mp4">
     </video>
+    </a>
 </div>
-I was learning locomotion with biped robots through this collection of projects. I learned optimal control things like Model Predictive Control (MPC) as well as other mathematical concepts (e.g. LQR, Lie Algebra, Manifolds, etc.) and how they're applied to robotic control as well as a bit of reinforcement learning. The goal was to make a robust algorithm for the robot to walk on non-stationary or inclined surfaces. Here's the simulation of it below.
+I was learning locomotion with biped robots through this collection of projects. I want to thank Professor Jessy Grizzle and Dr. Wami Ogunbi for mentoring me as a research assistant. I have been working on this until Wami completed her PhD. I learned optimal control things like Model Predictive Control (MPC) as well as other mathematical concepts (e.g. Lie Algebra, Manifolds, etc.) and how they're applied to robotic control as well as a bit of reinforcement learning (more of a self-studied thing). The goal was to make a robust algorithm for the robot to walk on non-stationary or inclined surfaces.  Here's the simulation of it below. 
 <div>
     <a class="imglink" href="/img/incline.gif" target="_blank" width="50%">
         <img src="/img/incline.gif" width="25%">
@@ -94,9 +95,9 @@ I was learning locomotion with biped robots through this collection of projects.
 
 
 
-## Web Dev
+# Web Dev
 
-# Instagram Clone
+## Instagram Clone
 
 <div>
     <a class="imglink" href="/img/jqoiview.png" target="_blank" width="100%">
