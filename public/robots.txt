@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-Allow: /
-Sitemap: ymiuraaa.github.io/sitemap.xml
