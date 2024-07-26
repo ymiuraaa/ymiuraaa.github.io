@@ -57,10 +57,9 @@ The background in moving simulated robots via Three.js allowed me to quickly lea
 # point cloud ICP
 
 <div>
-    <video class="imglink" href="/img/icp.gif" target="_blank">
-        <video src="/img/icp.gif" alt="ICP GIF" width="500" height="300">
-    </a>
-</div>
+    <a class="imglink" href="/img/icp.gif" target="_blank" width="100%">
+        <video autoplay loop muted width="500" height="300" src="/img/icp.gif">
+    </a></div>
 <!-- Let's insert a GIF here since that'll look pretty cool-->
 
 Iterative Closest Point (ICP) is an perception algorithm where you do pose estimation of an object in a scene given a model. It does this by minimizing the distance between the point clouds from the original model and the detected object that corresponds to the model in the scene. By fitting the model, we know the orientation (the pose) of the object. I made the visualization with Open3D. I plan on explaining the math and how I optimized the code in detail (via a certain data structure and design decision) in a blog post soon.
