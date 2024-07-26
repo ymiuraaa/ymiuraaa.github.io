@@ -54,9 +54,17 @@ This is a web-based robot simulator for path planning, forward kinematics, inver
 
 The background in moving simulated robots via Three.js allowed me to quickly learn how to animate things like a Finite-State-Machine on Blender using Blender's logic states. So I created a dance video for a [vocaloid](https://en.wikipedia.org/wiki/Vocaloid) song called Mesmerizer by Satsuki. The models are the based on the same characters from the [original MV](https://www.youtube.com/watch?v=19y8YTbvri8) taken from HatsuneDKaname on DevianArt. Since the movements are snappy, it is easy to define well-defined set points to do inverse kinematics with to the next set point. Thus, I was able to learn and create this animation despite having limited experience in Blender at the time. See the "Computer Graphics" section to see a brief description of one of my on-going projects that these two things inspired me to do.
 
+## stacking blocks with a Kuka LBR iiwa
+<div>
+<a class="imglink" href="/img/stacking.gif" target="_blank" width="100%">
+        <img src="/img/stacking.gif" width="100%">
+    </a>
+<div>
+Stacked objects on top of each other with a Kuka LBR iiwa robot arm. I ensured force closure of 
+object when picked up with the arm and precisely stacked them on top of each other. The simulation
+was done on PyBullet.
 
-
-# point cloud ICP
+## point cloud ICP
 
 <div>
     <a class="imglink" href="/img/icp.gif" target="_blank" width="100%">
@@ -72,14 +80,16 @@ Iterative Closest Point (ICP) is an perception algorithm where you do pose estim
     <video width="400" controls autoplay>
         <source src="/img/cassie-cardio.mov" type="video/mp4">
     </video>
+</div>
+I was learning locomotion with biped robots through this collection of projects. I learned optimal control things like Model Predictive Control (MPC) as well as other mathematical concepts (e.g. LQR, Lie Algebra, Manifolds, etc.) and how they're applied to robotic control as well as a bit of reinforcement learning. The goal was to make a robust algorithm for the robot to walk on non-stationary or inclined surfaces. Here's the simulation of it below.
+<div>
     <a class="imglink" href="/img/incline.gif" target="_blank" width="50%">
-        <img src="/img/incline.gif" width="50%">
+        <img src="/img/incline.gif" width="25%">
     </a>
     <a class="imglink" href="/img/stairclimb_sim.gif" target="_blank" width="50%">
-        <img src="/img/stairclimb_sim.gif" width="50%">
+        <img src="/img/stairclimb_sim.gif" width="25%">
     </a></div>
-</div>
-I was learning locomotion with biped robots through this collection of projects. I learned optimal control things like Model Predictive Control (MPC) as well as other mathematical concepts (e.g. LQR, Lie Algebra, Manifolds, etc.) and how they're applied to robotic control as well as a bit of reinforcement learning.
+<div>
 
 
 
