@@ -25,7 +25,6 @@ That's me and Professor Chad Jenkins with the robot. Thank you for helping me ac
 
 # Kuka LBR iiwa arm
 <video width="100%" height="100%" autoplay muted>
-  <source src="cassie.mp4" type="video/mp4">
   <source src="cassie.mov" type="video/mov">
 Your browser does not support the video tag.
 </video> 

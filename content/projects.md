@@ -24,8 +24,10 @@ Discuss with your roommates what you want the reward to be for doing their chore
 
 ## mARVin (autonomous robotic vehicle)
 <div>
-    <a class="imglink" href="/img/jtracer.png" target="_blank" width="100%">
-        <img src="/img/jtracer.png" width="100%">
+    <a class="imglink" href="/img/marvinrun.mp4" target="_blank" width="100%">
+        <video width="100%" controls autoplay>
+            <source src="/img/marvinrun.mp4" type="video/mp4">
+        </video>
     </a>
 </div>
 
@@ -66,9 +68,16 @@ Iterative Closest Point (ICP) is an perception algorithm where you do pose estim
 
 # Biped Robot Locomotion
 <div>
-    <a class="imglink" href="/img/rustsweeper.png" target="_blank" width="100%">
-        <img src="/img/rustsweeper.png" width="100%">
-    </a>
+    <a class="imglink" href="/img/cassie.mov" target="_blank" width="100%">
+    <video width="400" controls autoplay>
+        <source src="/img/cassie-cardio.mov" type="video/mp4">
+    </video>
+    <a class="imglink" href="/img/incline.gif" target="_blank" width="100%">
+        <img src="/img/incline.gif" width="100%">
+    </a></div>
+    <a class="imglink" href="/img/stairclimb_sim.gif" target="_blank" width="100%">
+        <img src="/img/stairclimb_sim.gif" width="100%">
+    </a></div>
 </div>
 I was learning locomotion with biped robots through this collection of projects. I learned optimal control things like Model Predictive Control (MPC) as well as other mathematical concepts (e.g. LQR, Lie Algebra, Manifolds, etc.) and how they're applied to robotic control as well as a bit of reinforcement learning.
 
