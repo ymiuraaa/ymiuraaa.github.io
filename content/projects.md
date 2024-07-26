@@ -68,15 +68,15 @@ Iterative Closest Point (ICP) is an perception algorithm where you do pose estim
 
 # Biped Robot Locomotion
 <div>
-    <a class="imglink" href="/img/cassie.mov" target="_blank" width="100%">
+    <a class="imglink" href="/img/cassie.mov" target="_blank" width="50%">
     <video width="400" controls autoplay>
         <source src="/img/cassie-cardio.mov" type="video/mp4">
     </video>
-    <a class="imglink" href="/img/incline.gif" target="_blank" width="100%">
-        <img src="/img/incline.gif" width="100%">
-    </a></div>
-    <a class="imglink" href="/img/stairclimb_sim.gif" target="_blank" width="100%">
-        <img src="/img/stairclimb_sim.gif" width="100%">
+    <a class="imglink" href="/img/incline.gif" target="_blank" width="50%">
+        <img src="/img/incline.gif" width="50%">
+    </a>
+    <a class="imglink" href="/img/stairclimb_sim.gif" target="_blank" width="50%">
+        <img src="/img/stairclimb_sim.gif" width="50%">
     </a></div>
 </div>
 I was learning locomotion with biped robots through this collection of projects. I learned optimal control things like Model Predictive Control (MPC) as well as other mathematical concepts (e.g. LQR, Lie Algebra, Manifolds, etc.) and how they're applied to robotic control as well as a bit of reinforcement learning.
