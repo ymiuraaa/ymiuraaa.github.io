@@ -107,7 +107,7 @@ I was learning locomotion with biped robots through this collection of projects.
 # Web Dev
 
 ## Instagram Clone
-
+(screen recording coming soon)
 <div>
     <a class="imglink" href="/img/jtracer.png" target="_blank" width="100%">
         <img src="/img/jtracer.png" width="100%">
@@ -119,13 +119,10 @@ I built an instagram application using client-side dynamic pages and a REST API.
 
 
 ## Search Engine
-
-<div style="display: flex;">
-    <a class="imglink" href="/img/santorini.png" target="_blank" width="50%">
-        <img src="/img/santorini.png" width="100%">
-    </a>
-    <a class="imglink" href="/img/santorini_dithered.png" target="_blank" width="50%">
-        <img src="/img/santorini_dithered.png" width="100%">
+(screen recording coming soon)
+<div>
+    <a class="imglink" href="/img/jtracer.png" target="_blank" width="100%">
+        <img src="/img/jtracer.png" width="100%">
     </a>
 </div>
 
@@ -138,6 +135,7 @@ This is a visualization of the A* search algorithm. The heuristic I used is base
 I think I'll eventually make it so you can select various algorithms (DFS, BFS, Djikstra, RRT, D*, etc.)
 But this is one thing I used to brush up on my data structures and algorithms skills.
 
+(screen recording coming soon)
 <div>
     <a class="imglink" href="/img/a-star.mp4" target="_blank" width="100%">
         <video width="100%" controls autoplay>
@@ -158,6 +156,7 @@ I use numerical analysis concepts too.
 
 I made a simple pendulum simulator using various type of numerical analysis algorithms including Euler, Verlet, Velocity Verlet, and Runge–Kutta (4th-Order).
 
+(screen recording coming soon)
 <div>
     <a class="imglink" href="/img/pid.mp4" target="_blank" width="100%">
         <video width="100%" controls autoplay>
@@ -167,7 +166,6 @@ I made a simple pendulum simulator using various type of numerical analysis algo
 </div>
 
 I also made one that works for a double pendulum too.
-
 
 
 
@@ -183,26 +181,6 @@ I can also explain the math that makes this work if enough people request it.
     </a>
 <div>
 
-
-## FSM dancing: from Three.js to Blender
-
-Remember the web-robot simulator thing I worked on? Well the animations are done with Three.js.<br>
-The background in moving simulated robots via Three.js allowed me to quickly learn how to animate things like a Finite-State-Machine. It started off with something like this:
-<div>
-<!-- TODO: add the stick bug animation -->
-<div>
-
-Using the background knowledge I needed to make this animation in Three.js, I was to quickly learn how to animate things like a Finite-State-Machine on Blender using Blender's logic states. So I created a dance video for a vocaloid song called Mesmerizer by Satsuki. he models are the based on the same characters from the [original MV](https://www.youtube.com/watch?v=19y8YTbvri8) taken from HatsuneDKaname on DevianArt. Since the movements are snappy, it is easy to define well-defined set points to do inverse kinematics with to the next set point. Thus, I was able to learn and create this animation despite having limited experience in Blender at the time. It inspired me to work on a blender addon too.
-
-
-## In progress: a blender addon
-
-
-
-
-So I want to make an addon that allows scripting the FSM in a more simpler way than the logic staes in Blender (or at least something more intuitive for programmers). I'm also going to implement another feature that could 
-
-So I created a dance video for a [vocaloid](https://en.wikipedia.org/wiki/Vocaloid) song called Mesmerizer by Satsuki. The models are the based on the same characters from the [original MV](https://www.youtube.com/watch?v=19y8YTbvri8) taken from HatsuneDKaname on DevianArt. Since the movements are snappy, it is easy to define well-defined set points to do inverse kinematics with to the next set point. Thus, I was able to learn and create this animation despite having limited experience in Blender at the time. See the "Computer Graphics" section to see a brief description of one of my on-going projects that these two things inspired me to do.
 
 ## Data Analytics / Non-Deep Learning ML projects
 
