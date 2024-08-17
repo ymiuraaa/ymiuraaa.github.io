@@ -2,6 +2,7 @@
 title = "Impossible List"
 date = 2024-07-26
 weight = 2
+draft = false
 +++
 
 
@@ -108,7 +109,7 @@ something, when I beat my friends in for something they're good at, or have some
 - ~~work with some medical professional to create some sort of technology very useful in the medical field using my background in CS~~
     - research \& making medical image compression software with Ryan Landvater
 - Make some very substantial project with Rust programming, and make Nathan proud of me
-- Finish [ALACS (see computer graphics section)](https://www.ymiuraaa.github.io/projects)
+- Finish my blender addon project
 
 
 If you are someone who can help me make one of these a reality or have expertise in any of these, 

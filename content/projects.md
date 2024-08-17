@@ -44,7 +44,7 @@ This is mARVin, our autonomous robotic vehicle that we've been working on in the
 </div>
 <!-- Let's insert a GIF here since that'll look pretty cool-->
 
-This is a web-based robot simulator for path planning, forward kinematics, inverse kinematics, PID, and more using Three.js. It also has a feature where you can render robots by making a JSON file that is structured in a similar way to a URDF file. (It's like an XML file but for robotics that define geometries and joints of robots). I also implemented a feature that allows the software to interface with the Fetch Robot via rosbridge. I want to thank Professor Chad Jenkins for fulfilling one of my goals I had since high school (to write code that works on the actual fetch robot, the first lab robot I've ever interacted with).
+This is a web-based robot simulator for path planning, forward kinematics, inverse kinematics, PID, and more using Three.js. It also has a feature where you can render robots by making a JSON file that is structured in a similar way to a URDF file. (It's like an XML file but for robotics that define geometries and joints of robots). I also implemented a feature that allows the software to interface with the Fetch Robot via rosbridge. I want to thank Professor Chad Jenkins for fulfilling one of my goals I had since high school (to write code that works on the actual fetch robot, the first lab robot I've seen in-person).
 
 
 <div>

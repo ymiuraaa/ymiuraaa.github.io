@@ -29,16 +29,24 @@
     </nav>
     <main>
       
-<small><a href="/blog">&lt;- back</a></small>
+<small><a href="blog">&lt;- back</a></small>
 <h1 class="title">
     ICP explained
 </h1>
-<small>2024-06-26 (Last updated )</small>
-<h1 id="this-page-is-under-construction">This page is under construction.<a class="zola-anchor" href="#this-page-is-under-construction" aria-label="Anchor link for: this-page-is-under-construction">🔗</a>
-</h1>
-<p>Check out the visualization I made in the <a href="https://www.ymiuraaa.github.io/projects">Projects</a> page.</p>
-<p>I'll be explaining the math and possible optimizations you can make with your implementation.</p>
-
+<small>2024-08-17 (Last updated )</small>
+<p>Check out the visualization I made in the <a href="/projects"> Projects</a> page.</p>
+<p>I'll be explaining the math and possible optimizations you can make with your implementation.
+I haven't finished it but I'll try to work on it during my free time.</p>
+<h1> Formalizing the Problem & Curse of dimensionality</h1>
+<p>Let's suppose we're given the original scene below:</p>
+<div>
+<a class="imglink" href="/img/icp_scene.png" target="_blank" width="100%">
+        <img src="/img/icp_scene.png" width="100%">
+    </a>
+<div>
+This scene has been reconstructed in 3D from multiple camera view points.<br>
+We want to estimate the pose of the block M in the scene.<br>
+We do this by fitting the 3D point clouds of the object in the scene and try to fit our 3D point clouds from the original model we know to the cluster of point clouds of the object in the scene. We will be minimizing the euclidean distance between our scene point clouds and the known model point clouds.<br>
 
     </main>
   </body>

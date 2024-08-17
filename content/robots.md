@@ -25,7 +25,7 @@ things involving sensors and perception.
     <img src="/img/fetch_and_chad.jpg" width="50%" height="50%">
 </a>
 <div>
-That's me and Professor Chad Jenkins with the robot. Thank you for helping me achieve my high school dreams! (Which was to get my code to work on the actual fetch robot, the first lab robot I ever got to interact with via AI4ALL) Notice how the robot's pose is matching the simulation. The software and robot communicate via rosbridge so its movement is in sync and can control the robot hardware.
+That's me and Professor Chad Jenkins with the robot. Thank you for helping me achieve my high school dreams! (Which was to get my code to work on the actual fetch robot, the first lab robot I ever got to see in person) Notice how the robot's pose is matching the simulation. The software and robot communicate via rosbridge so its movement is in sync and can control the robot hardware.
 
 
 # Kuka LBR iiwa arm
