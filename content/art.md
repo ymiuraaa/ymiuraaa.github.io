@@ -1,12 +1,16 @@
 +++
 title = "Art"
 
-updated = 2023-12-20
+updated = 2024-08-17
 +++
 
-<small>currently under construction. Will mostly have blender animations/rigging/models and random doodles.</small>
+<small>
+Currently under construction. Will mostly have blender animations/rigging/models and random doodles. Here's Toro (aka the Sony Cat) from the 2000. I don't know how he ended up here but I'll let him dance here for now. I'm definitely making my own model and rigging him on Blender at some point.
+</small>
 
-<!-- 2021-04-27
-<a class="imglink" href="/img/20210427.png" target="_blank" width="100%">
-    <img src="/img/20210427.png" width="100%">
-</a> -->
+2024-00-00
+<div>
+<a class="imglink" href="/img/toro.gif" target="_blank" width="25%" height="25%">
+    <img src="/img/toro.gif" width="25%" height="25%">
+</a>
+<div>
