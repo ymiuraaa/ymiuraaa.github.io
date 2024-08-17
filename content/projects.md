@@ -1,7 +1,7 @@
 +++
 title = "Projects"
 
-updated = 2023-12-20
+updated = 2024-08-17
 +++
 
 This is a very much non-exhaustive list of projects I've done. Scroll down or Ctrl + F (or Cmd + F if you're using a Macbook) to "Web Dev" if you want to see the things I did in terms of web development.<br>
@@ -12,16 +12,14 @@ If you wanna see what I've done in terms of other things like "Robotics" you can
 
 ## Mochi-roid
 <div>
-    <a class="imglink" href="/img/jtracer.png" target="_blank" width="100%">
-        <img src="/img/jtracer.png" width="100%">
+    <a class="imglink" href="/img/jtracer.png" target="_blank" width="50%" height="50%">
+        <img src="/img/jtracer.png" width="50%" height="50%">
     </a>
 </div>
 
 (note this is a filler image for now until I deploy the bot and start using the bots with my roomates)
 
-This is a bot that I made for the social media platform Discord, a platform that is similar to Slack but more casual and with more practical features in my personal opinion. <br>
-I made this bot to game-ify the process of doing the chores to encourage my roommates to do their chores because we tend to be busy and thus postpone doing chores. <br>
-Discuss with your roommates what you want the reward to be for doing their chores the most consistently. In our case, we decided that boba 🧋 would be our reward. Each user does their chores and send a picture in a dedicated channel on the discord server to receive peer approval via emoji reactions. Once the majority of the server approves, the user will earn a point. The winner will be decided monthly based on the number of points accumulated. When there is a tie for the top winners, the winner will be chosen at random within the tie. Everybody else pitches in the money for the winner's prize.<br>
+description coming soon
 
 # Robotics
 
