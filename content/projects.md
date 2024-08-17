@@ -5,7 +5,7 @@ updated = 2024-08-17
 +++
 
 This is a very much non-exhaustive list of projects I've done. Scroll down or Ctrl + F (or Cmd + F if you're using a Macbook) to "Web Dev" if you want to see the things I did in terms of web development.<br>
-If you wanna see what I've done in terms of other things like "Robotics" you can Ctrl+F / Cmd+F that too.
+If you want to see what I've done in terms of other things like "Robotics" you can Ctrl+F / Cmd+F that too.
 
 
 # Projects I made to make your lives easier:

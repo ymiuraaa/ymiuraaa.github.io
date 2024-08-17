@@ -19,26 +19,26 @@ Stuff like IMUs, wheel encoders, and Velodyne LiDAR sensors. Big picture, we con
 the navigation team can work with to do path planning with. Now I'm the lead of this team in charge of the
 things involving sensors and perception.
 
-# Fetch
+# Fetch 
 <div>
 <a class="imglink" href="/img/fetch_and_chad.jpg" target="_blank" width="50%" height="50%">
     <img src="/img/fetch_and_chad.jpg" width="50%" height="50%">
 </a>
 <div>
 That's me and Professor Chad Jenkins with the robot. Thank you for helping me achieve my high school dreams! (Which was to get my code to work on the actual fetch robot, the first lab robot I ever got to interact with via AI4ALL) Notice how the robot's pose is matching the simulation. The software and robot communicate via rosbridge so its movement is in sync and can control the robot hardware.
-<a class="imglink" href="/img/fetch.jpg" target="_blank" width="100%">
-    <img src="/img/fetch.jpg" width="100%">
-</a>
+
 
 # Kuka LBR iiwa arm
 Bin picking and stacking while ensuring force closure regardless of objects via an antipodal grasp. The decision of what object 
 to pick up is based on depth sensing from stereo cameras.
-<a class="imglink" href="/img/kuka_block.png" target="_blank" width="100%">
-    <img src="/img/kuka_block.png" width="100%">
+<div style="display: flex;">
+<a class="imglink" href="/img/kuka_block.png" target="_blank" width="75%" height="75%">
+    <img src="/img/kuka_block.png" width="75%" height="75%">
 </a>
 <a class="imglink" href="/img/kuka_stack.jpg" target="_blank" width="100%">
     <img src="/img/kuka_stack.jpg" width="100%">
 </a>
+</div>
 
 
 # Cassie and Digit

@@ -15,8 +15,8 @@
     <small>{{ page.date }} (Last updated {{ page.updated }})</small>
     {% set words = page.content | split(pat=" ") %}
     
-    {% if words | length > 100 %}
-        {{ words | slice(end=100) | join(sep=" ") | safe }}<a href="{{ page.permalink | safe }}">...</a>
+    {% if words | length > 75 %}
+        {{ words | slice(end=75) | join(sep=" ") | safe }}<a href="{{ page.permalink | safe }}">...</a>
     {% else %}
         {{ page.content | safe}}
     {% endif %}
