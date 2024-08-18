@@ -36,7 +36,7 @@ $$
 
 where $s_i$ are the points in the scene point cloud, $m_i$ are the points in the model point cloud, and $c_i$ is the integer index of the point in the $m$ that corresponds most closely with the $i$-th point in the scene.
 
-This is a very hard and non-convex problem, so instead of solving the optimization in one step, the algorithm alternates between solving for ${\ R,t\}$ and $c$ separately.
+This is a somewhat hard and non-convex problem, so instead of solving the optimization in one step, the algorithm alternates between solving for ${\ R,t\}$ and $c$ separately.
 
 But that's a pretty slow to brute force-through, especially when you can have very dense 3D point clouds. 
 - It's generally a relatively slow algorithm.
