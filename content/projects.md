@@ -149,9 +149,9 @@ But this is one thing I used to brush up on my data structures and algorithms sk
 basically anything that's relevant to graphics and simulations. That includes anything where
 I use numerical analysis concepts too.
 
-## PID simulator
+## Numerical Methods concepts applied to PID control
 
-I made a simple pendulum simulator using various type of numerical analysis algorithms including Euler, Verlet, Velocity Verlet, and Runge–Kutta (4th-Order) to approximate the integration (the I in PID) term.
+I made a simple PID pendulum simulator using various type of numerical analysis algorithms including Euler, Verlet, Velocity Verlet, and Runge–Kutta (4th-Order) to approximate the integration (the I in PID) term.
 
 <div>
     <a class="imglink" href="/img/pid_and_integrator.mp4" target="_blank" width="100%">
