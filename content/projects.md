@@ -4,7 +4,7 @@ title = "Projects"
 updated = 2024-08-17
 +++
 
-This is a list of projects I've done that I'm proud of. Scroll down or Ctrl + F (or Cmd + F if you're using a Macbook) to "Web Dev" if you want to see the things I did in terms of web development.<br>
+This is a list of projects I've done that I think are quite notable. Scroll down or Ctrl + F (or Cmd + F if you're using a Macbook) to "Web Dev" if you want to see the things I did in terms of web development.<br>
 If you want to see what I've done in terms of other things like "Robotics" you can Ctrl+F / Cmd+F that too.
 
 
@@ -25,21 +25,27 @@ description coming soon
 
 ## mARVin (autonomous robotic vehicle)
 <div>
-    <a class="imglink" href="/img/marvinrun.mp4" target="_blank" width="100%">
-        <video width="100%" controls autoplay>
+    <a class="imglink" href="/img/marvinrun.mp4" target="_blank" width="75%" height="75%">
+        <video width="75%" height="75%" controls autoplay>
             <source src="/img/marvinrun.mp4" type="video/mp4">
         </video>
     </a>
 </div>
 
-This is mARVin, our autonomous robotic vehicle that we've been working on in the [University of Michigan Autonomous Robotic Vehicle](https://www.umarv.com/), an engineering student organization. I've worked on the integration of sensors for mARVin and used them for [SLAM (Simultaneous Localization and Mapping)](https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping) algorithms in ROS2. We used sensors like IMUs, wheel encoders, and LiDAR. <br>As a sensors lead, in addition to everything I've been doing, I'll be communicating with other subteam leads and getting members to meet other subteam's needs that can be achieved with background in sensors and programming. I also host meetings and mentor new members as well. <br>Lately, we've been collaborating with the navigation team to integrate SLAM algorithms so they can do path planning with the information available from sensors and computer vision. I'm also helping out some navigation team members and leads with our custom simulation software as well.
+This is mARVin, our autonomous robotic vehicle that we've been working on in the [University of Michigan Autonomous Robotic Vehicle](https://www.umarv.com/), an engineering student organization. I've worked on the integration of sensors for mARVin and used them for [SLAM (Simultaneous Localization and Mapping)](https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping) algorithms in ROS2. We used sensors like IMUs, wheel encoders, and LiDAR. 
+<div>
+<a class="imglink" href="/img/slam.png" target="_blank" width="75%" height="75%">
+        <img src="/img/slam.png" width="75%" height="75%">
+    </a>
+<div><br>As a sensors lead, in addition to everything I've been doing, I'll be communicating with other subteam leads and getting members to meet other subteam's needs that can be achieved with background in sensors and programming. I also host meetings and mentor new members as well. 
+<br>Lately, we've been collaborating with the navigation team to integrate SLAM algorithms so they can do path planning with the information available from sensors and computer vision. I'm also helping out some navigation team members and leads with our custom simulation software as well.
 
 
 ## Web Robot Simulator and Interface
 
 <div>
-    <a class="imglink" href="/img/ik_viz.png" target="_blank" width="100%">
-        <img src="/img/ik_viz.png" width="100%">
+    <a class="imglink" href="/img/ik_viz.png" target="_blank" width="75%" height="75%">
+        <img src="/img/ik_viz.png" width="75%" height="75%">
     </a>
 </div>
 <!-- Let's insert a GIF here since that'll look pretty cool-->
