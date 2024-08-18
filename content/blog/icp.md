@@ -25,7 +25,8 @@ This scene has been reconstructed in 3D from multiple camera view points.<br>
 We want to estimate the pose of the block M in the scene.<br>
 We do this by fitting the 3D point clouds of the object in the scene and try to fit our 3D point clouds from the original model we know to the cluster of point clouds of the object in the scene. We will be minimizing the euclidean distance between our scene point clouds and the known model point clouds.<br>
 
-We do this by iteratively solving the following problem:
+We do this by iteratively solving the following problem:<br>
+
 $$
 \begin{array}{ll}
 \min _{R, t, c} & \sum_i\left\|R s_i+t-m_{c_i}\right\|_2^2 \\
@@ -35,7 +36,7 @@ $$
 
 where $s_i$ are the points in the scene point cloud, $m_i$ are the points in the model point cloud, and $c_i$ is the integer index of the point in the $m$ that corresponds most closely with the $i$-th point in the scene.
 
-This is a very hard and non-convex problem, so instead of solving the optimization in one step, the algorithm alternates between solving for ${\ R,t\}$ and c separately.
+This is a very hard and non-convex problem, so instead of solving the optimization in one step, the algorithm alternates between solving for ${\ R,t\}$ and $c$ separately.
 
 But that's a pretty slow to brute force-through, especially when you can have very dense 3D point clouds. 
 - It's generally a relatively slow algorithm.
