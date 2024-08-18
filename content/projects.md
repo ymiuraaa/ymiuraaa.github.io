@@ -131,9 +131,8 @@ A simplified search engine I made. It utilizes a tf-idf based search algorithm a
 
 This is a visualization of the A* search algorithm. The heuristic I used is based on the euclidian distance from the goal coordinate. It's just a simple 2D map, so A* works for this purpose. 
 I think I'll eventually make it so you can select various algorithms (DFS, BFS, Djikstra, RRT, D*, etc.)
-But this is one thing I used to brush up on my data structures and algorithms skills.
+But this is one thing I used to brush up on my data structures and algorithms skills. The screen recording below is a demo of the A* algorithm being used for path planning.
 
-(screen recording coming soon)
 <div>
     <a class="imglink" href="/img/a-star.mp4" target="_blank" width="100%">
         <video width="100%" controls autoplay>
@@ -152,13 +151,12 @@ I use numerical analysis concepts too.
 
 ## PID simulator
 
-I made a simple pendulum simulator using various type of numerical analysis algorithms including Euler, Verlet, Velocity Verlet, and Runge–Kutta (4th-Order).
+I made a simple pendulum simulator using various type of numerical analysis algorithms including Euler, Verlet, Velocity Verlet, and Runge–Kutta (4th-Order) to approximate the integration (the I in PID) term.
 
-(screen recording coming soon)
 <div>
-    <a class="imglink" href="/img/pid.mp4" target="_blank" width="100%">
+    <a class="imglink" href="/img/pid_and_integrator.mp4" target="_blank" width="100%">
         <video width="100%" controls autoplay>
-            <source src="/img/pid.mp4" type="video/mp4">
+            <source src="/img/pid_and_integrator.mp4" type="video/mp4">
         </video>
     </a>
 </div>
