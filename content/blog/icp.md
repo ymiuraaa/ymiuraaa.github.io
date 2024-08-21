@@ -9,8 +9,12 @@ draft = false
 Check out the visualization I made in the <a href="/projects"> Projects</a> page.
 
 I'll be explaining the math and possible optimizations you can make with your implementation.
+Sorry about the inconsistency of the fonts too. It's not the same as using the $$\LaTeX$$ bot on Discord.
 I haven't finished it but I'll try to work on it during my free time.
 
+<h2>Background (things you probably should know first)</h2>
+
+TODO: explain here
 
 <h2> Formalizing the Problem</h2>
 
@@ -23,26 +27,28 @@ Let's suppose we're given the original scene below:
 <div>
 This scene has been reconstructed in 3D from multiple camera view points.<br>
 We want to estimate the pose of the block M in the scene.<br>
-We do this by fitting the 3D point clouds of the object in the scene and try to fit our 3D point clouds from the original model we know to the cluster of point clouds of the object in the scene. We will be minimizing the euclidean distance between our scene point clouds and the known model point clouds.<br>
+We do this by fitting the 3D point clouds of the object in the scene and try to fit our 3D point clouds from the original model we know to the cluster of point clouds of the object in the scene.<br>
 
 We do this by iteratively solving the following problem:<br>
 
-$$
-\begin{array}{ll}
-\min _{R, t, c} & \sum_i\left\|R s_i+t-m_{c_i}\right\|_2^2 \\
-\text { s.t. } & R^T=R^{-1}, \operatorname{det}(R)=1
-\end{array}
-$$
+$$\begin{gather}
+        \min_{R, t, c} \ \ \ \sum_{i} \| R s_i + t - m_{c_i}\|_2^2 \\\\
+        s.t. \ \ \ R^T = R^{-1}, \mathrm{det}(R) = 1 \\
+\end{gather}$$
 
-where $s_i$ are the points in the scene point cloud, $m_i$ are the points in the model point cloud, and $c_i$ is the integer index of the point in the $m$ that corresponds most closely with the $i$-th point in the scene.
+where $$s_i$$ are the points in the scene point cloud, $$m_i$$ are the points in the model point cloud, 
+and $$c_i$$ is the index of the point in the $$m$$ that corresponds most closely with the $$i$$-th point in the scene
 
-This is a somewhat hard and non-convex problem, so instead of solving the optimization in one step, the algorithm alternates between solving for ${\ R,t\}$ and $c$ separately.
+This is a somewhat hard and non-convex problem, so instead of solving the optimization in one step,
+the algorithm alternates between solving for $${\ R,t\} \text{ and }c$$ seperately.
 
-But that's a pretty slow to brute force-through, especially when you can have very dense 3D point clouds. 
-- It's generally a relatively slow algorithm.
-- There are point clouds in the raw data that are not relevant to the model.
+
+But there are a few problems with brute force solving this problem. that's a pretty slow to brute force-through, especially when you can have very dense 3D point clouds. 
 - Our error function grows quadratically
 - It's sensitive to outliers
+- It's generally a relatively slow algorithm.
+- There are point clouds in the raw data that are not relevant to the object we want to localize.
+
 
 <div>
 <h2>KD Trees + Closest Point Heuristic</h2>

@@ -15,6 +15,14 @@
     
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$']]
+      }
+    };
+  </script>
+  
 
 
   </head>
@@ -42,7 +50,10 @@
     
         <p>Check out the visualization I made in the <a href="/projects"> Projects</a> page.</p>
 <p>I'll be explaining the math and possible optimizations you can make with your implementation.
+Sorry about the inconsistency of the fonts too. It's not the same as using the $$\LaTeX$$ bot on Discord.
 I haven't finished it but I'll try to work on it during my free time.</p>
+<h2>Background (things you probably should know first)</h2>
+<p>TODO: explain here</p>
 <h2> Formalizing the Problem</h2>
 <p>Let's suppose we're given the original scene below:</p>
 <div>
@@ -50,9 +61,7 @@ I haven't finished it but I'll try to work on it during my free time.</p>
         <img src="/img/icp_scene.png" width="100%">
     </a>
 <div>
-This scene has been reconstructed in 3D from multiple camera view points.<br>
-We want to estimate the pose of the block M in the scene.<br>
-We do this by fitting the 3D point clouds of the<a href="&#x2F;blog&#x2F;icp&#x2F;">...</a>
+This scene has been reconstructed in 3D from<a href="&#x2F;blog&#x2F;icp&#x2F;">...</a>
     
 </div>
 
