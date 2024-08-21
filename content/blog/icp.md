@@ -50,10 +50,13 @@ But there are a few problems with brute force solving this problem. that's a pre
 - There are point clouds in the raw data that are not relevant to the object we want to localize.
 
 
-<div>
 <h2>KD Trees + Closest Point Heuristic</h2>
-<a href="https://link.springer.com/article/10.1007/BF01427149">Zhang et al.</a> proposes a solution: why not use a modified version of KD-trees? The nice thing about this approach is that it's robust to occulusions and outliers. Conveniently, both SciPy and Open3D have KD-trees as an available data structure after importing the library, so I decided to use KD trees.
-<div>
+<a href="https://link.springer.com/article/10.1007/BF01427149">Zhang et al.</a> proposes a solution: why not use a modified version of KD-trees? 
+
+TODO: explain why we're using KD trees
+
+The nice thing about this approach is that it's robust to occulusions and outliers. Conveniently, both SciPy and Open3D have KD-trees as an available data structure after importing the library, so I decided to use KD trees.
+
 
 <h2>Coherent Point Drift (CPD)</h2>
 This is quite a clever probabilistic approach. So in CPD,
