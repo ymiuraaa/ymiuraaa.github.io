@@ -167,8 +167,7 @@ I made a simple PID pendulum simulator using various type of numerical analysis 
     </a>
 </div>
 
-I also made one that works for a double pendulum too.
-
+It's made to be stable at the x_desired point.
 
 
 ## Linear Complementarity Problem Simulation
