@@ -61,7 +61,7 @@ This is a web-based robot simulator for path planning, forward kinematics, inver
     </a>
 </div>
 
-This is an extension of the robot simulator where it does path-planning via RRT (Rapidly exploring random trees). The reason why I chose to do RRT over A* is because while A* can produce a more optimal path, it's quite computationally expensive due to how exhaustive it is, so it can be slow in large/complex/higher dimensions (e.g. in 3D vs 2D). 
+This is an extension of the robot simulator where it does path-planning via RRT (Rapidly exploring random trees). The reason why I chose to do RRT over A* is because while A* can produce a more optimal path, it's quite computationally expensive due to how exhaustive it is, so it can be slow in large/complex/higher dimensions (e.g. in 3D vs 2D). Path-planning via RRT could be faster due to its nature of being a sampling-based algorithm that searches through nonconvex, high-dimensional spaces such as the Three.js scene as shown above in the video.
 
 
 ## stacking blocks with a Kuka LBR iiwa
