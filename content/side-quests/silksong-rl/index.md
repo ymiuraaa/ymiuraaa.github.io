@@ -6,8 +6,7 @@ date = 2026-08-30
 tags = ["technical"]
 +++
 
-talk about system design and only changes on observer: fewer game states,
-tactical state, counter/parry/dodge predictor, etc. 
+talk about system design and only changes on observer
 
 TLDR i've forked a repo that had working game state extractors, reduced the number of states (most of them were specific to one boss only) and defined a tactical taxonomy. 
 
