@@ -70,7 +70,7 @@ theme = "monokai-classic"
 [extra]
 close_responsive_menu_on_resize = true
 color_scheme = "synthwave-84"
-favicon_emoji = "👨‍💻"
+favicon_emoji = "🌙"
 fediverse_creator = "@ebkalderon@hachyderm.io"
 feed_icon = true
 layout = "center"
