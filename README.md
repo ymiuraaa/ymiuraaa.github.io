@@ -72,13 +72,19 @@ zola serve
 # one-off build into public/
 zola build
 
-# build into a specific directory instead (e.g. for github pages'
-# "serve from /docs" option)
-zola build -o docs
-
 # validate content/links without writing any files
 zola check
 ```
+
+## deployment
+
+pushes to `main` trigger `.github/workflows/deploy.yml`, which installs zola
+0.22.1 in ci, runs `zola build`, and publishes `public/` straight to github
+pages. no build output is ever committed to this repo — `public/` stays
+gitignored.
+
+this requires the repo's pages source (settings → pages) to be set to
+**github actions**, not "deploy from a branch".
 
 ## structure
 
