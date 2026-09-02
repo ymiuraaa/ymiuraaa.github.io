@@ -20,7 +20,5 @@ turns out you don't need much to start. a raspberry pi is plenty. i dug through 
 
 that pi became the first real piece of the homelab, running pihole (i'm fed up with ads) and wireguard so i could vpn in from anywhere once everything else came online. pihole won't touch youtube ads though, brave handles those instead.
 
-unrelated hypothesis: the best privacy move might not be hiding but to be so unbelievably boring that nobody bothers digging past page one. wireguard tunnel's just a bonus, really. or so i can work on projects from my personal laptop when im on business/test trips.
-
 for compute, i pulled my old toshiba laptop out of the closet and turned it into my proxmox box / lab manager. not sure it's the wisest long-term call, but it's what i had lying around. well... now that i have all this i should probably figure out how to put the cisco asa 5512-x to use instead of letting it sit there without a rack. i'll probably improvise a rack by buying stuff from ikea. once that's sorted i'll basically have a full stack, minus a nas and a proper workstation. those are getting bought gradually, because i'm a new grad and my bank account would like a word... or who knows maybe i'll buy the server that my boss is selling.
 
