@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Yamato Miura - mathematics</title>
+    <subtitle>Demo website for the Terminus theme for Zola</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://ymiuraaa.github.io/tags/mathematics/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://ymiuraaa.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-08-27T00:00:00+00:00</updated>
+    <id>https://ymiuraaa.github.io/tags/mathematics/atom.xml</id>
+    <entry xml:lang="en">
+        <title>LaTeX testing</title>
+        <published>2026-08-27T00:00:00+00:00</published>
+        <updated>2026-08-27T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Yamato Miura
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://ymiuraaa.github.io/blog/math-typesetting/"/>
+        <id>https://ymiuraaa.github.io/blog/math-typesetting/</id>
+        
+        <content type="html" xml:base="https://ymiuraaa.github.io/blog/math-typesetting/">&lt;p&gt;Recall from elementary school the generalized Stokes&#x27; theorem: for an orientable manifold $M$ and differential form $\omega$,&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+\int_{\partial M} \omega = \int_M d\omega.
+$$&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
