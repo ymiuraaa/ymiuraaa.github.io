@@ -61,7 +61,7 @@ then set `theme = "<name>"` in `config.toml` to match the folder name.
 ## commands
 
 install zola first (see [getzola.org](https://www.getzola.org/documentation/getting-started/installation/)).
-this site is built/tested against zola **0.22.x** — the theme currently
+this site is built/tested against zola **0.22.x**. the theme currently
 breaks on 0.23+ due to a tera macro-import change, so avoid installing latest
 until that's fixed upstream.
 
@@ -80,7 +80,7 @@ zola check
 
 pushes to `main` trigger `.github/workflows/deploy.yml`, which installs zola
 0.22.1 in ci, runs `zola build`, and publishes `public/` straight to github
-pages. no build output is ever committed to this repo — `public/` stays
+pages. no build output is ever committed to this repo. `public/` stays
 gitignored.
 
 this requires the repo's pages source (settings → pages) to be set to
@@ -91,5 +91,5 @@ this requires the repo's pages source (settings → pages) to be set to
 ```
 config.toml          site config (title, nav, taxonomies, theme, etc.)
 content/              your actual pages/posts (markdown + toml frontmatter)
-themes/terminus/       theme submodule — don't edit directly, changes won't persist
+themes/terminus/       theme submodule. don't edit directly, changes won't persist
 ```
