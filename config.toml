@@ -6,7 +6,7 @@ base_url = "https://ymiuraaa.github.io"
 
 # The site title and description; used in feeds by default.
 title = "Yamato Miura"
-description = "Demo website for the Terminus theme for Zola"
+description = "Personal/Academic Website"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
