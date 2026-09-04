@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>Yamato Miura - technical</title>
-    <subtitle>Demo website for the Terminus theme for Zola</subtitle>
+    <subtitle>Personal&#x2F;Academic Website</subtitle>
     <link rel="self" type="application/atom+xml" href="https://ymiuraaa.github.io/tags/technical/atom.xml"/>
     <link rel="alternate" type="text/html" href="https://ymiuraaa.github.io"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
@@ -30,7 +30,6 @@
 &lt;p&gt;turns out you don&amp;#39;t need much to start. a raspberry pi is plenty. i dug through my old box of microcontrollers, sensors, and other embedded systems junk and found my old pi 3b, a 16gb microsd card, and some leftover fiber optic cable just sitting there. jack pot!&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;ymiuraaa.github.io&#x2F;side-quests&#x2F;budget-homelab&#x2F;img&#x2F;koolaid.jpg&quot; alt=&quot;oh yeah&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;that pi became the first real piece of the homelab, running pihole (i&amp;#39;m fed up with ads) and wireguard so i could vpn in from anywhere once everything else came online. pihole won&amp;#39;t touch youtube ads though, brave handles those instead.&lt;&#x2F;p&gt;
-&lt;p&gt;unrelated hypothesis: the best privacy move might not be hiding but to be so unbelievably boring that nobody bothers digging past page one. wireguard tunnel&amp;#39;s just a bonus, really. or so i can work on projects from my personal laptop when im on business&#x2F;test trips.&lt;&#x2F;p&gt;
 &lt;p&gt;for compute, i pulled my old toshiba laptop out of the closet and turned it into my proxmox box &#x2F; lab manager. not sure it&amp;#39;s the wisest long-term call, but it&amp;#39;s what i had lying around. well... now that i have all this i should probably figure out how to put the cisco asa 5512-x to use instead of letting it sit there without a rack. i&amp;#39;ll probably improvise a rack by buying stuff from ikea. once that&amp;#39;s sorted i&amp;#39;ll basically have a full stack, minus a nas and a proper workstation. those are getting bought gradually, because i&amp;#39;m a new grad and my bank account would like a word... or who knows maybe i&amp;#39;ll buy the server that my boss is selling.&lt;&#x2F;p&gt;
 </content>
         
@@ -51,9 +50,8 @@
         <link rel="alternate" type="text/html" href="https://ymiuraaa.github.io/side-quests/silksong-rl/"/>
         <id>https://ymiuraaa.github.io/side-quests/silksong-rl/</id>
         
-        <content type="html" xml:base="https://ymiuraaa.github.io/side-quests/silksong-rl/">&lt;p&gt;talk about system design and only changes on observer: fewer game states,
-tactical state, counter&#x2F;parry&#x2F;dodge predictor, etc.&lt;&#x2F;p&gt;
-&lt;p&gt;TLDR i&#x27;ve forked a repo that had working game state extractors, reduced the number of states, and introduced &lt;a class=&quot;external&quot; rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.geeksforgeeks.org&#x2F;deep-learning&#x2F;multi-task-learningmtl-for-deep-learning&#x2F;&quot;&gt;multi-task learning&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://ymiuraaa.github.io/side-quests/silksong-rl/">&lt;p&gt;talk about system design and only changes on observer&lt;&#x2F;p&gt;
+&lt;p&gt;TLDR i&#x27;ve forked a repo that had working game state extractors, reduced the number of states (most of them were specific to one boss only) and defined a tactical taxonomy.&lt;&#x2F;p&gt;
 &lt;p&gt;but i am moving this to normal hollow knight because silksong does not have a boss rush mode or any way to fight bosses back to back.&lt;&#x2F;p&gt;
 </content>
         

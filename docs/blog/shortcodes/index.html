@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src-attr 'unsafe-inline'; base-uri 'self'; connect-src 'self' cloudflareinsights.com; form-action 'self'; script-src 'self' static.cloudflareinsights.com 'sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=='">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; base-uri 'self'; connect-src 'self' cloudflareinsights.com; form-action 'self'; script-src 'self' static.cloudflareinsights.com 'sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=='">
 
     <title>Shortcodes | Yamato Miura</title>
 
     <link rel="preload" href="https://ymiuraaa.github.io/fonts/FiraCode-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="https://ymiuraaa.github.io/fonts/FiraCode-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="https://ymiuraaa.github.io/css/style.css?h=6d2221c78b109beb6d13">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌙</text></svg>">
     <script src="https://ymiuraaa.github.io/js/auto-close-popover-on-resize.js?h=4ef87d6fc7b98b22e044" defer></script>
     <script src="https://ymiuraaa.github.io/js/copy-code-to-clipboard.js?h=6eec6d5a29e934c1de32" defer></script>
 
@@ -20,23 +20,23 @@
     
     <meta name="author" content="Eyal Kalderon">
     <meta name="author" content="John Smith">
-    <meta name="description" content="This theme includes some useful custom shortcodes that you can use to enhance your posts. Whether you want to display a gallery of images, or format a professional-looking reference section, these custom shortcodes have got you covered…">
+    <meta name="description" content="This theme includes some useful custom shortcodes that you can use to enhance your posts. Whether you want to display a gallery of images, or format a professional-looking reference section, these custom shortcodes have got you covered. …">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#211f1a">
     <meta name="color-scheme" content="dark">
 
     <meta property="og:title" content="Shortcodes">
     <meta property="og:type" content="article">
-    <meta property="og:image" content="https://ymiuraaa.github.io/processed_images/example-hi-res-image.cebe9298c4e0c78b.jpg">
+    <meta property="og:image" content="https://ymiuraaa.github.io/processed_images/example-hi-res-image.e4b1784e6aea79dd.jpg">
     <meta property="og:image:width" content="900">
     <meta property="og:image:height" content="675">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:alt" content="A high-resolution photo of a partially disassembled mini PC">
     <meta name="twitter:card" content="summary_large_image">
     <meta property="og:url" content="https://ymiuraaa.github.io/blog/shortcodes/">
-    <meta property="og:description" content="This theme includes some useful custom shortcodes that you can use to enhance your posts. Whether you want to display a gallery of images, or format a professional-looking reference section, these custom shortcodes have got you covered…">
+    <meta property="og:description" content="This theme includes some useful custom shortcodes that you can use to enhance your posts. Whether you want to display a gallery of images, or format a professional-looking reference section, these custom shortcodes have got you covered. …">
     <meta property="og:site_name" content="Yamato Miura">
-    <meta property="og:updated_time" content="2026-09-01T23:05:09.115669344-04:00">
+    <meta property="og:updated_time" content="2026-09-04T00:02:42.046740-04:00">
     <meta property="article:published_time" content="2025-06-07T00:00:00+00:00">
     <meta property="article:tag" content="showcase">
     <meta property="article:tag" content="shortcodes">
@@ -156,14 +156,18 @@ alert types.</p>
 <ol>
 <li>
 <p>Inline with parameters:</p>
-<pre class="giallo" style="color: #F8F8F2; background-color: #272822;"><code data-lang="jinja"><span class="giallo-l"><span>{{ alert(type</span><span style="color: #F92672;">=</span><span style="color: #E6DB74;">&quot;danger&quot;</span><span>, icon</span><span style="color: #F92672;">=</span><span style="color: #E6DB74;">&quot;tip&quot;</span><span>, title</span><span style="color: #F92672;">=</span><span style="color: #E6DB74;">&quot;An important tip&quot;</span><span>, text</span><span style="color: #F92672;">=</span><span style="color: #E6DB74;">&quot;Stay hydrated~&quot;</span><span>) }}</span></span></code></pre></li>
+<pre data-lang="jinja" class="language-jinja "><code class="language-jinja" data-lang="jinja">{{ alert(type=&quot;danger&quot;, icon=&quot;tip&quot;, title=&quot;An important tip&quot;, text=&quot;Stay hydrated~&quot;) }}
+</code></pre>
+</li>
 <li>
 <p>With a content body:</p>
-<pre class="giallo" style="color: #F8F8F2; background-color: #272822;"><code data-lang="jinja"><span class="giallo-l"><span>{%</span><span style="color: #F92672;"> alert</span><span>(type</span><span style="color: #F92672;">=</span><span style="color: #E6DB74;">&quot;danger&quot;</span><span>, icon</span><span style="color: #F92672;">=</span><span style="color: #E6DB74;">&quot;tip&quot;</span><span>, title</span><span style="color: #F92672;">=</span><span style="color: #E6DB74;">&quot;An important tip&quot;</span><span>) %}</span></span>
-<span class="giallo-l"><span>Stay hydrated~</span></span>
-<span class="giallo-l"></span>
-<span class="giallo-l"><span>This method is particularly useful for longer content or multiple paragraphs.</span></span>
-<span class="giallo-l"><span>{%</span><span style="color: #F92672;"> end</span><span> %}</span></span></code></pre></li>
+<pre data-lang="jinja" class="language-jinja "><code class="language-jinja" data-lang="jinja">{% alert(type=&quot;danger&quot;, icon=&quot;tip&quot;, title=&quot;An important tip&quot;) %}
+Stay hydrated~
+
+This method is particularly useful for longer content or multiple paragraphs.
+{% end %}
+</code></pre>
+</li>
 </ol>
 <p>Both methods support the same parameters (<code>type</code>, <code>icon</code>, and <code>title</code>), with the
 content either passed as the <code>text</code> parameter or as the body between tags.</p>
@@ -171,15 +175,16 @@ content either passed as the <code>text</code> parameter or as the body between 
     <div class="alert-icon alert-icon-note"></div>
     <div class="alert-content" role="presentation">
         <strong id="VKG178DC" class="alert-title" aria-hidden="true">NOTE</strong>
-        <p><a class="external" rel="external" href="https://github.com/getzola/zola/releases/tag/v0.21.0">Zola 0.21.0</a> added
+        <p><a href="https://github.com/getzola/zola/releases/tag/v0.21.0">Zola 0.21.0</a> added
 support for GitHub-flavored Markdown alert syntax. This notation may be used in
 place of the <code>alert</code> shortcode, if desired.</p>
-<pre class="giallo" style="color: #F8F8F2; background-color: #272822;"><code data-lang="markdown"><span class="giallo-l"><span style="color: #75715E;font-style: italic;">&gt; [</span><span style="color: #AE81FF;font-style: italic;">!NOTE</span><span style="color: #75715E;font-style: italic;">]</span></span>
-<span class="giallo-l"><span style="color: #75715E;font-style: italic;">&gt; This is a note.</span></span></code></pre>
+<pre data-lang="markdown" class="language-markdown "><code class="language-markdown" data-lang="markdown">&gt; [!NOTE]
+&gt; This is a note.
+</code></pre>
 <p>However, the quality of the generated HTML is quite poor compared to the <code>alert</code>
 shortcode, both semantics-wise and accessibility-wise, so its use is not
 recommended.</p>
-<p>See <a class="external" rel="external" href="https://github.com/getzola/zola/issues/2817">getzola/zola#2817</a> for more
+<p>See <a href="https://github.com/getzola/zola/issues/2817">getzola/zola#2817</a> for more
 details.</p>
 
     </div>
@@ -200,16 +205,18 @@ details.</p>
 </figure>
 <h3 id="usage-1">Usage<a class="post-anchor" href="#usage-1" aria-label="Anchor link for: usage-1"><span aria-hidden="true">#</span></a>
 </h3>
-<pre class="giallo" style="color: #F8F8F2; background-color: #272822;"><code data-lang="jinja"><span class="giallo-l"><span>{{ mastodon(url</span><span style="color: #F92672;">=</span><span style="color: #E6DB74;">&quot;https://hachyderm.io/@ebkalderon/114462281016082381&quot;</span><span>) }}</span></span></code></pre><h2 id="references">References<a class="post-anchor" href="#references" aria-label="Anchor link for: references"><span aria-hidden="true">#</span></a>
+<pre data-lang="jinja" class="language-jinja "><code class="language-jinja" data-lang="jinja">{{ mastodon(url=&quot;https:&#x2F;&#x2F;hachyderm.io&#x2F;@ebkalderon&#x2F;114462281016082381&quot;) }}
+</code></pre>
+<h2 id="references">References<a class="post-anchor" href="#references" aria-label="Anchor link for: references"><span aria-hidden="true">#</span></a>
 </h2>
 <p>This shortcode formats a reference section with a hanging indent like so:</p>
 <section class="references-list">
     <p>Alderson, E. (2015). Cybersecurity and Social Justice: A Critique of Corporate
     Hegemony in a Digital World. <em>New York Journal of Technology, 11</em>(2), 24-39.
-    <a class="external" rel="external" href="https://doi.org/10.1007/s10198-022-01497-6">https://doi.org/10.1007/s10198-022-01497-6</a>.</p>
+    <a href="https://doi.org/10.1007/s10198-022-01497-6">https://doi.org/10.1007/s10198-022-01497-6</a>.</p>
     <p>Funkhouser, M. (2012). The Social Norms of Indecency: An Analysis of Deviant
     Behavior in Contemporary Society. <em>Los Angeles Journal of Sociology, 16</em>(3),
-    41-58. <a class="external" rel="external" href="https://doi.org/10.1093/jmp/jhx037">https://doi.org/10.1093/jmp/jhx037</a>.</p>
+    41-58. <a href="https://doi.org/10.1093/jmp/jhx037">https://doi.org/10.1093/jmp/jhx037</a>.</p>
     <p>Schrute, D. (2005). The Beet Farming Revolution: An Analysis of Agricultural
     Innovation. <em>Scranton Agricultural Quarterly, 38</em>(3), 67-81.</p>
     <p>Steinbrenner, G. (1997). The Cost-Benefit Analysis of George Costanza: An
@@ -218,28 +225,30 @@ details.</p>
     <p>Winger, J. A. (2010). The Art of Debate: An Examination of Rhetoric in Greendale
     Community College's Model United Nations. <em>Colorado Journal of Communication
     Studies, 19</em>(2), 73-86.
-    <a class="external" rel="external" href="https://doi.org/10.1093/6seaons/1movie">https://doi.org/10.1093/6seaons/1movie</a>.</p>
+    <a href="https://doi.org/10.1093/6seaons/1movie">https://doi.org/10.1093/6seaons/1movie</a>.</p>
 </section>
 <h3 id="usage-2">Usage<a class="post-anchor" href="#usage-2" aria-label="Anchor link for: usage-2"><span aria-hidden="true">#</span></a>
 </h3>
-<pre class="giallo" style="color: #F8F8F2; background-color: #272822;"><code data-lang="jinja"><span class="giallo-l"><span>{%</span><span style="color: #F92672;"> references</span><span>() %}</span></span>
-<span class="giallo-l"></span>
-<span class="giallo-l"><span>Your references go here.</span></span>
-<span class="giallo-l"></span>
-<span class="giallo-l"><span>Each in a new line. Markdown (links, italics...) will be rendered.</span></span>
-<span class="giallo-l"></span>
-<span class="giallo-l"><span>{%</span><span style="color: #F92672;"> end</span><span> %}</span></span></code></pre><h2 id="responsive-image-shortcode">Responsive Image Shortcode<a class="post-anchor" href="#responsive-image-shortcode" aria-label="Anchor link for: responsive-image-shortcode"><span aria-hidden="true">#</span></a>
+<pre data-lang="jinja" class="language-jinja "><code class="language-jinja" data-lang="jinja">{% references() %}
+
+Your references go here.
+
+Each in a new line. Markdown (links, italics...) will be rendered.
+
+{% end %}
+</code></pre>
+<h2 id="responsive-image-shortcode">Responsive Image Shortcode<a class="post-anchor" href="#responsive-image-shortcode" aria-label="Anchor link for: responsive-image-shortcode"><span aria-hidden="true">#</span></a>
 </h2>
 <p>Convert a high-resolution source image into a responsive image using the
 <code>responsive_image</code> shortcode.</p>
-<img src="https://ymiuraaa.github.io/processed_images/example-hi-res-image.aceb0789aa8521ba.jpg" alt="Responsive hi-res image"
+<img src="https://ymiuraaa.github.io/processed_images/example-hi-res-image.09a36eb152be3117.jpg" alt="Responsive hi-res image"
      width="1280" height="960"
      sizes="(min-width: 920px) 784px, (min-width: 700px) calc(82vw + 46px), calc(100vw - 40px)" 
-     srcset="https://ymiuraaa.github.io/processed_images/example-hi-res-image.151483fc1bb8b26a.jpg 640w,
-             https://ymiuraaa.github.io/processed_images/example-hi-res-image.fa258ca93f15426a.jpg 784w,
-             https://ymiuraaa.github.io/processed_images/example-hi-res-image.7b0bcd49d8b3f48f.jpg 1280w,
-             https://ymiuraaa.github.io/processed_images/example-hi-res-image.47b52b8daac3dbe9.jpg 1920w,
-             https://ymiuraaa.github.io/processed_images/example-hi-res-image.569c1c721a61b537.jpg 2560w"
+     srcset="https://ymiuraaa.github.io/processed_images/example-hi-res-image.3e355af7610f09c5.jpg 640w,
+             https://ymiuraaa.github.io/processed_images/example-hi-res-image.e68a7436dd2adc8a.jpg 784w,
+             https://ymiuraaa.github.io/processed_images/example-hi-res-image.7c5e4cb7ae44f7ba.jpg 1280w,
+             https://ymiuraaa.github.io/processed_images/example-hi-res-image.c1564abec5e01fc0.jpg 1920w,
+             https://ymiuraaa.github.io/processed_images/example-hi-res-image.c1ba0cdca5ab5ce8.jpg 2560w"
      loading="lazy">
 <p>By default, <code>responsive_image</code> will generate <strong>at most</strong> five versions of the
 source image, with the following maximum widths (measured in pixels):</p>
@@ -255,14 +264,16 @@ still retaining visual sharpness. Which image the browser displays depends on
 the device's native screen resolution, pixel density, viewport size, etc.</p>
 <h3 id="usage-3">Usage<a class="post-anchor" href="#usage-3" aria-label="Anchor link for: usage-3"><span aria-hidden="true">#</span></a>
 </h3>
-<pre class="giallo" style="color: #F8F8F2; background-color: #272822;"><code data-lang="jinja"><span class="giallo-l"><span>{{ responsive_image(src</span><span style="color: #F92672;">=</span><span style="color: #E6DB74;">&quot;example-hi-res-image.jpg&quot;</span><span>, alt</span><span style="color: #F92672;">=</span><span style="color: #E6DB74;">&quot;Responsive hi-res image&quot;</span><span>) }}</span></span></code></pre>
+<pre data-lang="jinja" class="language-jinja "><code class="language-jinja" data-lang="jinja">{{ responsive_image(src=&quot;example-hi-res-image.jpg&quot;, alt=&quot;Responsive hi-res image&quot;) }}
+</code></pre>
 <p>The default behavior of the <code>responsive_image</code> shortcode can be overridden by
 adding the following lines to your website's <code>config.toml</code>.</p>
-<pre class="giallo" style="color: #F8F8F2; background-color: #272822;"><code data-lang="toml"><span class="giallo-l"><span>[extra.responsive_images]</span></span>
-<span class="giallo-l"><span>widths = [</span><span style="color: #AE81FF;">640</span><span>,</span><span style="color: #AE81FF;"> 784</span><span>,</span><span style="color: #AE81FF;"> 1280</span><span>,</span><span style="color: #AE81FF;"> 1920</span><span>,</span><span style="color: #AE81FF;"> 2560</span><span>]</span></span>
-<span class="giallo-l"><span>fallback_width =</span><span style="color: #AE81FF;"> 1280</span></span></code></pre>
+<pre data-lang="toml" class="language-toml "><code class="language-toml" data-lang="toml">[extra.responsive_images]
+widths = [640, 784, 1280, 1920, 2560]
+fallback_width = 1280
+</code></pre>
 <p>Responsive images are lazy-loaded by default to improve performance for
-below-the-fold content (<a class="external" rel="external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img#loading">see MDN docs</a>). This behavior can be overridden on a
+below-the-fold content (<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img#loading">see MDN docs</a>). This behavior can be overridden on a
 case-by-case basis by passing <code>lazy=false</code> to the <code>responsive_image</code> shortcode.</p>
 <h2 id="wide-container-shortcode">Wide Container Shortcode<a class="post-anchor" href="#wide-container-shortcode" aria-label="Anchor link for: wide-container-shortcode"><span aria-hidden="true">#</span></a>
 </h2>
@@ -279,13 +290,15 @@ mobile, except for tables, which will get a horizontal scroll.</p>
 </div>
 <h3 id="usage-4">Usage<a class="post-anchor" href="#usage-4" aria-label="Anchor link for: usage-4"><span aria-hidden="true">#</span></a>
 </h3>
-<pre class="giallo" style="color: #F8F8F2; background-color: #272822;"><code data-lang="jinja"><span class="giallo-l"><span>{%</span><span style="color: #F92672;"> wide_container</span><span>() %}</span></span>
-<span class="giallo-l"></span>
-<span class="giallo-l"><span>Place your code block, paragraph, table… here.</span></span>
-<span class="giallo-l"></span>
-<span class="giallo-l"><span>Markdown will of course be rendered.</span></span>
-<span class="giallo-l"></span>
-<span class="giallo-l"><span>{%</span><span style="color: #F92672;"> end</span><span> %}</span></span></code></pre>
+<pre data-lang="jinja" class="language-jinja "><code class="language-jinja" data-lang="jinja">{% wide_container() %}
+
+Place your code block, paragraph, table… here.
+
+Markdown will of course be rendered.
+
+{% end %}
+</code></pre>
+
         </article>
         <nav class="post-navigation">
             <header class="post-navigation-title">
@@ -324,8 +337,8 @@ mobile, except for tables, which will get a horizontal scroll.</p>
         </address>
         <p class="copyright">
             <span>© <time>2026</time> Yamato Miura</span>
-            <span>Powered by <a class="external" rel="external" href="https://www.getzola.org">Zola</a></span>
-            <span>Theme by <a class="external" rel="external" href="https://eyalkalderon.com">ebkalderon</a></span>
+            <span>Powered by <a href="https://www.getzola.org">Zola</a></span>
+            <span>Theme by <a href="https://eyalkalderon.com">ebkalderon</a></span>
         </p>
     </footer>
 </body>
