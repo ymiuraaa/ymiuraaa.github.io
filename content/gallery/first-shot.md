@@ -5,4 +5,4 @@ date = 2026-08-30
 
 insert some description here
 
-![placeholder](filler.png)
+![placeholder](/img/first-shot/filler.png)
