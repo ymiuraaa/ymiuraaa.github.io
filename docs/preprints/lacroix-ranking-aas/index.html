@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src-attr 'unsafe-inline'; base-uri 'self'; connect-src 'self' cloudflareinsights.com; form-action 'self'; script-src 'self' static.cloudflareinsights.com 'sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=='">
 
-    <title>first unhinged fresh side quest entry | Yamato Miura</title>
+    <title>b2b lacroix flavor ranking as a service | Yamato Miura</title>
 
     <link rel="preload" href="https://ymiuraaa.github.io/fonts/FiraCode-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="https://ymiuraaa.github.io/fonts/FiraCode-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -15,7 +15,7 @@
     <script src="https://ymiuraaa.github.io/js/auto-close-popover-on-resize.js?h=4ef87d6fc7b98b22e044" defer></script>
     <script src="https://ymiuraaa.github.io/js/copy-code-to-clipboard.js?h=6eec6d5a29e934c1de32" defer></script>
 
-    <link rel="canonical" href="https://ymiuraaa.github.io/side-quests/fih/">
+    <link rel="canonical" href="https://ymiuraaa.github.io/preprints/lacroix-ranking-aas/">
     <link rel="alternate" type="application/atom+xml" href="https://ymiuraaa.github.io/atom.xml" title="Yamato Miura">
     
     <meta name="author" content="Yamato Miura">
@@ -24,18 +24,17 @@
     <meta name="theme-color" content="#211f1a">
     <meta name="color-scheme" content="dark">
 
-    <meta property="og:title" content="first unhinged fresh side quest entry">
+    <meta property="og:title" content="b2b lacroix flavor ranking as a service">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://ymiuraaa.github.io/side-quests/fih/">
+    <meta property="og:url" content="https://ymiuraaa.github.io/preprints/lacroix-ranking-aas/">
     <meta property="og:description" content="Personal&#x2F;Academic Website">
     <meta property="og:site_name" content="Yamato Miura">
     <meta property="og:updated_time" content="2026-09-07T23:53:54.690506319-04:00">
-    <meta property="article:published_time" content="2026-08-29T00:00:00+00:00">
-    <meta property="article:tag" content="random">
+    <meta property="article:published_time" content="2026-09-08T00:00:00+00:00">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Yamato Miura">
     <meta name="twitter:label2" content="Reading time">
-    <meta name="twitter:data2" content="1 min">
+    <meta name="twitter:data2" content="2 min">
     <meta name="fediverse:creator" content="@ebkalderon@hachyderm.io">
 </head>
 
@@ -63,19 +62,39 @@
         <article class="post content">
             <header>
                 <h1 class="post-title">
-                    <a href="https://ymiuraaa.github.io/side-quests/fih/">first unhinged fresh side quest entry</a>
+                    <a href="https://ymiuraaa.github.io/preprints/lacroix-ranking-aas/">b2b lacroix flavor ranking as a service</a>
                 </h1>
                 <ul class="post-meta hidden">
-                    <li title="Published on 2026-08-29"><time datetime="2026-08-29">2026.08.29</time></li>
+                    <li title="Published on 2026-09-08"><time datetime="2026-09-08">2026.09.08</time></li>
                     <li role="separator" aria-hidden="true">::</li>
-                    <li title="10 words"><time datetime="PT1M">1 min</time> read</li>
+                    <li title="299 words"><time datetime="PT2M">2 min</time> read</li>
                 </ul>
-                <div class="post-tags">
-                    <span>#<a rel="tag" href="https://ymiuraaa.github.io/tags/random/">random</a></span>
-                </div>
             </header>
 
-<p>insert unhinged side quest here. ideally something fresh and new.</p>
+<p>the actual ranking lives at <a class="external" rel="external" href="https://ymiuraaa.github.io/lacroix">ymiuraaa.github.io/lacroix</a>, a separate zola project (<a class="external" rel="external" href="https://github.com/ymiuraaa/lacroix">source</a>) styled as a 1:1 clone of <a class="external" rel="external" href="https://cs.nyu.edu/~fouhey/fun/lacroix/">prof. david fouhey's ranking</a>. comic sans, weird cursor, all of it. you are now reading the "making of" featurette. there is no dvd. this is the whole bonus feature.</p>
+<p><img src="/img/lacroix/lacroix-sneakpeak.png" alt="sneak-peak" loading="lazy" decoding="async" /></p>
+<h2 id="">flavors are just markdown, the layout is a css trick<a class="post-anchor" href="#" aria-label="Anchor link for: "><span aria-hidden="true">#</span></a>
+</h2>
+<p>no custom data structures. no frontmatter arrays. just vibes, and markdown. a flavor entry is exactly this:</p>
+<pre class="giallo" style="color: #F8F8F2; background-color: #272822;"><code data-lang="markdown"><span class="giallo-l"><span>![</span><span style="color: #AE81FF;">flavor name</span><span>](</span><span style="color: #E6DB74;">images/flavor-name.png</span><span>)</span></span>
+<span class="giallo-l"><span style="color: #66D9EF;font-weight: bold;">**flavor name**</span><span>:</span></span>
+<span class="giallo-l"><span>a short review of the flavor.</span></span></code></pre>
+<p>grouped under <code>## ⭐⭐⭐⭐⭐</code> style headings, because apparently sparkling water deserved a five-tier ranking system. the template doesn&#39;t loop over anything. it just hands <code>section.content | safe</code> to the page and walks away. zola sorts it out anyway, which feels like it shouldn&#39;t work, but does.</p>
+<p>the actual layout comes from one css selector:</p>
+<pre class="giallo" style="color: #F8F8F2; background-color: #272822;"><code data-lang="css"><span class="giallo-l"><span style="color: #F92672;">p</span><span style="color: #A6E22E;">:has</span><span>(</span><span style="color: #F92672;">&gt; img</span><span>) {</span></span>
+<span class="giallo-l"><span style="color: #66D9EF;font-style: italic;">    display</span><span>:</span><span style="color: #66D9EF;"> inline-block</span><span>;</span></span>
+<span class="giallo-l"><span style="color: #66D9EF;font-style: italic;">    width</span><span>:</span><span style="color: #AE81FF;"> 670</span><span style="color: #F92672;">px</span><span>;</span></span>
+<span class="giallo-l"><span style="color: #66D9EF;font-style: italic;">    text-align</span><span>:</span><span style="color: #66D9EF;"> left</span><span>;</span></span>
+<span class="giallo-l"><span>}</span></span></code></pre>
+<p>that&#39;s it. that&#39;s the whole template. i want to tell you something more technically impressive happened here, but no. css did all the work while i stood nearby, sipping passionfruit flavor lacroix and taking credit.</p>
+<h2 id="-1">turning a random photo into a matching flavor image<a class="post-anchor" href="#-1" aria-label="Anchor link for: -1"><span aria-hidden="true">#</span></a>
+</h2>
+<p>grabbing a can photo off the internet and making it match the others (background gone, cropped tight, exact same size) is handled by a script i named <code>pewpew</code>. i would like to say the name reflects some deep architectural philosophy. it does not. you run it like this:</p>
+<pre class="giallo" style="color: #F8F8F2; background-color: #272822;"><code data-lang="shellscript"><span class="giallo-l"><span style="color: #A6E22E;">./pewpew</span><span style="color: #E6DB74;"> static/images/new-flavor.jpg</span></span></code></pre>
+<p>and it flood-fills the background to transparent from the corner, crops to whatever&#39;s left, resizes it to a fixed size, and saves a png next to the original. no manual cropping, no fighting with an image editor at 1am questioning your choices. drop the output path into the markdown and you&#39;re done.</p>
+<ul>
+<li>you feel weirdly at peace with css selectors now.</li>
+</ul>
 
         </article>
         <nav class="post-navigation">
@@ -84,12 +103,8 @@
                 <hr>
             </header>
             <div class="post-navigation-buttons">
-                <a rel="next" href="https://ymiuraaa.github.io/side-quests/silksong-rl/" aria-label="Next article" aria-describedby="next-title">
-                    &lt;&nbsp;[<span id="next-title">go, my army of hornet-lings!</span>]
-                </a>
-                <span aria-hidden="true" role="separator">::</span>
-                <a rel="prev" href="https://ymiuraaa.github.io/side-quests/alacs/" aria-label="Prev article" aria-describedby="prev-title">
-                    [<span id="prev-title">ALACS</span>]&nbsp;&gt;
+                <a rel="prev" href="https://ymiuraaa.github.io/preprints/math-typesetting/" aria-label="Prev article" aria-describedby="prev-title">
+                    [<span id="prev-title">LaTeX testing</span>]&nbsp;&gt;
                 </a>
             </div>
         </nav>

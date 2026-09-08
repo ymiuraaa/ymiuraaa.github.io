@@ -20,10 +20,10 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ymiuraaa.github.io/blog/math-typesetting/"/>
-        <id>https://ymiuraaa.github.io/blog/math-typesetting/</id>
+        <link rel="alternate" type="text/html" href="https://ymiuraaa.github.io/preprints/math-typesetting/"/>
+        <id>https://ymiuraaa.github.io/preprints/math-typesetting/</id>
         
-        <content type="html" xml:base="https://ymiuraaa.github.io/blog/math-typesetting/">&lt;p&gt;Recall from elementary school the generalized Stokes&#x27; theorem: for an orientable manifold $M$ and differential form $\omega$,&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://ymiuraaa.github.io/preprints/math-typesetting/">&lt;p&gt;Recall from elementary school the generalized Stokes&#x27; theorem: for an orientable manifold $M$ and differential form $\omega$,&lt;&#x2F;p&gt;
 &lt;p&gt;$$
 \int_{\partial M} \omega = \int_M d\omega.
 $$&lt;&#x2F;p&gt;

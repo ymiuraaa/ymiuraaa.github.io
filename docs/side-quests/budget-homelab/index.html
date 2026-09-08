@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; base-uri 'self'; connect-src 'self' cloudflareinsights.com; form-action 'self'; script-src 'self' static.cloudflareinsights.com 'sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=='">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src-attr 'unsafe-inline'; base-uri 'self'; connect-src 'self' cloudflareinsights.com; form-action 'self'; script-src 'self' static.cloudflareinsights.com 'sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=='">
 
     <title>homelab on a budget | Yamato Miura</title>
 
@@ -29,7 +29,7 @@
     <meta property="og:url" content="https://ymiuraaa.github.io/side-quests/budget-homelab/">
     <meta property="og:description" content="Personal&#x2F;Academic Website">
     <meta property="og:site_name" content="Yamato Miura">
-    <meta property="og:updated_time" content="2026-09-04T00:02:42.046627-04:00">
+    <meta property="og:updated_time" content="2026-09-07T23:53:54.690506319-04:00">
     <meta property="article:published_time" content="2026-08-30T00:00:00+00:00">
     <meta property="article:tag" content="technical">
     <meta name="twitter:label1" content="Written by">
@@ -52,7 +52,7 @@
             <a class="skip-to-content" href="#main">Skip to main content</a>
             <button class="main-menu-dropdown-button" popovertarget="nav-menu">Menu</button>
             <ul id="nav-menu" class="main-menu-items" aria-label="Site Navigation" popover>
-                <li><a href="https://ymiuraaa.github.io/blog/">blog</a></li>
+                <li><a href="https://ymiuraaa.github.io/preprints/">preprints</a></li>
                 <li><a href="https://ymiuraaa.github.io/gallery/">gallery</a></li>
                 <li><a href="https://ymiuraaa.github.io/side-quests/">side quests</a></li>
                 <li><a href="https://ymiuraaa.github.io/tags/">tags</a></li>
@@ -68,7 +68,7 @@
                 <ul class="post-meta hidden">
                     <li title="Published on 2026-08-30"><time datetime="2026-08-30">2026.08.30</time></li>
                     <li role="separator" aria-hidden="true">::</li>
-                    <li title="375 words"><time datetime="PT2M">2 min</time> read</li>
+                    <li title="377 words"><time datetime="PT2M">2 min</time> read</li>
                 </ul>
                 <div class="post-tags">
                     <span>#<a rel="tag" href="https://ymiuraaa.github.io/tags/technical/">technical</a></span>
@@ -77,10 +77,10 @@
 
 <p>turns out a lot of my coworkers homelab. found this out through a random conversation at work. a couple of hilariously intense examples: our boss (yes, the associate director) has an entire server rack he's trying to sell because he's upgrading, and another coworker has a server, gnss, and lidar on his crosstrek (note: it's a hobby project he's doing for fun. not work related). we got to talking about who else does this kind of thing, and it was way more people than i expected. i just didn't have a way in yet.</p>
 <p>then the coworker who put lidar and gnss on his crosstrek handed me a cisco asa 5512-x like it was nothing. i grabbed a compatible 2.5" sata ssd for it and figured that'd be the extent of it.</p>
-<p><img src="https://ymiuraaa.github.io/side-quests/budget-homelab/img/cisco-asa-5512x.jpg" alt="cisco asa 5512-x" loading="lazy" decoding="async" /></p>
+<p><img src="/img/homelab/cisco-asa-5512x.jpg" alt="cisco asa 5512-x" loading="lazy" decoding="async" /></p>
 <p>from there something clicked, probably one of those 2am late night highs, and i went all in.</p>
 <p>turns out you don&#39;t need much to start. a raspberry pi is plenty. i dug through my old box of microcontrollers, sensors, and other embedded systems junk and found my old pi 3b, a 16gb microsd card, and some leftover fiber optic cable just sitting there. jack pot!</p>
-<p><img src="https://ymiuraaa.github.io/side-quests/budget-homelab/img/koolaid.jpg" alt="oh yeah" loading="lazy" decoding="async" /></p>
+<p><img src="/img/homelab/koolaid.jpg" alt="oh yeah" loading="lazy" decoding="async" /></p>
 <p>that pi became the first real piece of the homelab, running pihole (i&#39;m fed up with ads) and wireguard so i could vpn in from anywhere once everything else came online. pihole won&#39;t touch youtube ads though, brave handles those instead.</p>
 <p>for compute, i pulled my old toshiba laptop out of the closet and turned it into my proxmox box / lab manager. not sure it&#39;s the wisest long-term call, but it&#39;s what i had lying around. well... now that i have all this i should probably figure out how to put the cisco asa 5512-x to use instead of letting it sit there without a rack. i&#39;ll probably improvise a rack by buying stuff from ikea. once that&#39;s sorted i&#39;ll basically have a full stack, minus a nas and a proper workstation. those are getting bought gradually, because i&#39;m a new grad and my bank account would like a word... or who knows maybe i&#39;ll buy the server that my boss is selling.</p>
 
@@ -118,8 +118,8 @@
         </address>
         <p class="copyright">
             <span>© <time>2026</time> Yamato Miura</span>
-            <span>Powered by <a href="https://www.getzola.org">Zola</a></span>
-            <span>Theme by <a href="https://eyalkalderon.com">ebkalderon</a></span>
+            <span>Powered by <a class="external" rel="external" href="https://www.getzola.org">Zola</a></span>
+            <span>Theme by <a class="external" rel="external" href="https://eyalkalderon.com">ebkalderon</a></span>
         </p>
     </footer>
 </body>

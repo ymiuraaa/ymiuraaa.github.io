@@ -4,24 +4,6 @@
         <loc>https://ymiuraaa.github.io/</loc>
     </url>
     <url>
-        <loc>https://ymiuraaa.github.io/blog/</loc>
-    </url>
-    <url>
-        <loc>https://ymiuraaa.github.io/blog/markdown/</loc>
-        <lastmod>2025-06-17</lastmod>
-    </url>
-    <url>
-        <loc>https://ymiuraaa.github.io/blog/math-typesetting/</loc>
-        <lastmod>2026-08-27</lastmod>
-    </url>
-    <url>
-        <loc>https://ymiuraaa.github.io/blog/page/1/</loc>
-    </url>
-    <url>
-        <loc>https://ymiuraaa.github.io/blog/shortcodes/</loc>
-        <lastmod>2025-06-07</lastmod>
-    </url>
-    <url>
         <loc>https://ymiuraaa.github.io/categories/</loc>
     </url>
     <url>
@@ -33,6 +15,20 @@
     </url>
     <url>
         <loc>https://ymiuraaa.github.io/gallery/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://ymiuraaa.github.io/preprints/</loc>
+    </url>
+    <url>
+        <loc>https://ymiuraaa.github.io/preprints/lacroix-ranking-aas/</loc>
+        <lastmod>2026-09-08</lastmod>
+    </url>
+    <url>
+        <loc>https://ymiuraaa.github.io/preprints/math-typesetting/</loc>
+        <lastmod>2026-08-27</lastmod>
+    </url>
+    <url>
+        <loc>https://ymiuraaa.github.io/preprints/page/1/</loc>
     </url>
     <url>
         <loc>https://ymiuraaa.github.io/side-quests/</loc>
@@ -57,19 +53,10 @@
         <loc>https://ymiuraaa.github.io/tags/</loc>
     </url>
     <url>
-        <loc>https://ymiuraaa.github.io/tags/markdown/</loc>
-    </url>
-    <url>
         <loc>https://ymiuraaa.github.io/tags/mathematics/</loc>
     </url>
     <url>
         <loc>https://ymiuraaa.github.io/tags/random/</loc>
-    </url>
-    <url>
-        <loc>https://ymiuraaa.github.io/tags/shortcodes/</loc>
-    </url>
-    <url>
-        <loc>https://ymiuraaa.github.io/tags/showcase/</loc>
     </url>
     <url>
         <loc>https://ymiuraaa.github.io/tags/technical/</loc>

@@ -12,7 +12,7 @@ there's two types of side quests:
 
 one that's more technical
 
-one that will make you go "huh???" and be weirded out 💀
+one that will make you go "huh???" and be weirded out :skull:
 
 check them out!
 

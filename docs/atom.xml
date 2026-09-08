@@ -5,8 +5,51 @@
     <link rel="self" type="application/atom+xml" href="https://ymiuraaa.github.io/atom.xml"/>
     <link rel="alternate" type="text/html" href="https://ymiuraaa.github.io"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2026-08-30T00:00:00+00:00</updated>
+    <updated>2026-09-08T00:00:00+00:00</updated>
     <id>https://ymiuraaa.github.io/atom.xml</id>
+    <entry xml:lang="en">
+        <title>b2b lacroix flavor ranking as a service</title>
+        <published>2026-09-08T00:00:00+00:00</published>
+        <updated>2026-09-08T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Yamato Miura
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://ymiuraaa.github.io/preprints/lacroix-ranking-aas/"/>
+        <id>https://ymiuraaa.github.io/preprints/lacroix-ranking-aas/</id>
+        
+        <content type="html" xml:base="https://ymiuraaa.github.io/preprints/lacroix-ranking-aas/">&lt;p&gt;the actual ranking lives at &lt;a class=&quot;external&quot; rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;ymiuraaa.github.io&#x2F;lacroix&quot;&gt;ymiuraaa.github.io&#x2F;lacroix&lt;&#x2F;a&gt;, a separate zola project (&lt;a class=&quot;external&quot; rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ymiuraaa&#x2F;lacroix&quot;&gt;source&lt;&#x2F;a&gt;) styled as a 1:1 clone of &lt;a class=&quot;external&quot; rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;cs.nyu.edu&#x2F;~fouhey&#x2F;fun&#x2F;lacroix&#x2F;&quot;&gt;prof. david fouhey&#x27;s ranking&lt;&#x2F;a&gt;. comic sans, weird cursor, all of it. you are now reading the &quot;making of&quot; featurette. there is no dvd. this is the whole bonus feature.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;img&#x2F;lacroix&#x2F;lacroix-sneakpeak.png&quot; alt=&quot;sneak-peak&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;&quot;&gt;flavors are just markdown, the layout is a css trick&lt;a class=&quot;post-anchor&quot; href=&quot;#&quot; aria-label=&quot;Anchor link for: &quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;no custom data structures. no frontmatter arrays. just vibes, and markdown. a flavor entry is exactly this:&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #F8F8F2; background-color: #272822;&quot;&gt;&lt;code data-lang=&quot;markdown&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;![&lt;&#x2F;span&gt;&lt;span style=&quot;color: #AE81FF;&quot;&gt;flavor name&lt;&#x2F;span&gt;&lt;span&gt;](&lt;&#x2F;span&gt;&lt;span style=&quot;color: #E6DB74;&quot;&gt;images&#x2F;flavor-name.png&lt;&#x2F;span&gt;&lt;span&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #66D9EF;font-weight: bold;&quot;&gt;**flavor name**&lt;&#x2F;span&gt;&lt;span&gt;:&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;a short review of the flavor.&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;grouped under &lt;code&gt;## ⭐⭐⭐⭐⭐&lt;&#x2F;code&gt; style headings, because apparently sparkling water deserved a five-tier ranking system. the template doesn&amp;#39;t loop over anything. it just hands &lt;code&gt;section.content | safe&lt;&#x2F;code&gt; to the page and walks away. zola sorts it out anyway, which feels like it shouldn&amp;#39;t work, but does.&lt;&#x2F;p&gt;
+&lt;p&gt;the actual layout comes from one css selector:&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #F8F8F2; background-color: #272822;&quot;&gt;&lt;code data-lang=&quot;css&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F92672;&quot;&gt;p&lt;&#x2F;span&gt;&lt;span style=&quot;color: #A6E22E;&quot;&gt;:has&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F92672;&quot;&gt;&amp;gt; img&lt;&#x2F;span&gt;&lt;span&gt;) {&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #66D9EF;font-style: italic;&quot;&gt;    display&lt;&#x2F;span&gt;&lt;span&gt;:&lt;&#x2F;span&gt;&lt;span style=&quot;color: #66D9EF;&quot;&gt; inline-block&lt;&#x2F;span&gt;&lt;span&gt;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #66D9EF;font-style: italic;&quot;&gt;    width&lt;&#x2F;span&gt;&lt;span&gt;:&lt;&#x2F;span&gt;&lt;span style=&quot;color: #AE81FF;&quot;&gt; 670&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F92672;&quot;&gt;px&lt;&#x2F;span&gt;&lt;span&gt;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #66D9EF;font-style: italic;&quot;&gt;    text-align&lt;&#x2F;span&gt;&lt;span&gt;:&lt;&#x2F;span&gt;&lt;span style=&quot;color: #66D9EF;&quot;&gt; left&lt;&#x2F;span&gt;&lt;span&gt;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;that&amp;#39;s it. that&amp;#39;s the whole template. i want to tell you something more technically impressive happened here, but no. css did all the work while i stood nearby, sipping passionfruit flavor lacroix and taking credit.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;-1&quot;&gt;turning a random photo into a matching flavor image&lt;a class=&quot;post-anchor&quot; href=&quot;#-1&quot; aria-label=&quot;Anchor link for: -1&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;grabbing a can photo off the internet and making it match the others (background gone, cropped tight, exact same size) is handled by a script i named &lt;code&gt;pewpew&lt;&#x2F;code&gt;. i would like to say the name reflects some deep architectural philosophy. it does not. you run it like this:&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #F8F8F2; background-color: #272822;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #A6E22E;&quot;&gt;.&#x2F;pewpew&lt;&#x2F;span&gt;&lt;span style=&quot;color: #E6DB74;&quot;&gt; static&#x2F;images&#x2F;new-flavor.jpg&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;and it flood-fills the background to transparent from the corner, crops to whatever&amp;#39;s left, resizes it to a fixed size, and saves a png next to the original. no manual cropping, no fighting with an image editor at 1am questioning your choices. drop the output path into the markdown and you&amp;#39;re done.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;you feel weirdly at peace with css selectors now.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
     <entry xml:lang="en">
         <title>First Shot</title>
         <published>2026-08-30T00:00:00+00:00</published>
@@ -24,7 +67,7 @@
         <id>https://ymiuraaa.github.io/gallery/first-shot/</id>
         
         <content type="html" xml:base="https://ymiuraaa.github.io/gallery/first-shot/">&lt;p&gt;insert some description here&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;ymiuraaa.github.io&#x2F;gallery&#x2F;first-shot&#x2F;filler.png&quot; alt=&quot;placeholder&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;img&#x2F;first-shot&#x2F;filler.png&quot; alt=&quot;placeholder&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 </content>
         
     </entry>
@@ -46,10 +89,10 @@
         
         <content type="html" xml:base="https://ymiuraaa.github.io/side-quests/budget-homelab/">&lt;p&gt;turns out a lot of my coworkers homelab. found this out through a random conversation at work. a couple of hilariously intense examples: our boss (yes, the associate director) has an entire server rack he&#x27;s trying to sell because he&#x27;s upgrading, and another coworker has a server, gnss, and lidar on his crosstrek (note: it&#x27;s a hobby project he&#x27;s doing for fun. not work related). we got to talking about who else does this kind of thing, and it was way more people than i expected. i just didn&#x27;t have a way in yet.&lt;&#x2F;p&gt;
 &lt;p&gt;then the coworker who put lidar and gnss on his crosstrek handed me a cisco asa 5512-x like it was nothing. i grabbed a compatible 2.5&quot; sata ssd for it and figured that&#x27;d be the extent of it.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;ymiuraaa.github.io&#x2F;side-quests&#x2F;budget-homelab&#x2F;img&#x2F;cisco-asa-5512x.jpg&quot; alt=&quot;cisco asa 5512-x&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;img&#x2F;homelab&#x2F;cisco-asa-5512x.jpg&quot; alt=&quot;cisco asa 5512-x&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;from there something clicked, probably one of those 2am late night highs, and i went all in.&lt;&#x2F;p&gt;
 &lt;p&gt;turns out you don&amp;#39;t need much to start. a raspberry pi is plenty. i dug through my old box of microcontrollers, sensors, and other embedded systems junk and found my old pi 3b, a 16gb microsd card, and some leftover fiber optic cable just sitting there. jack pot!&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;ymiuraaa.github.io&#x2F;side-quests&#x2F;budget-homelab&#x2F;img&#x2F;koolaid.jpg&quot; alt=&quot;oh yeah&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;img&#x2F;homelab&#x2F;koolaid.jpg&quot; alt=&quot;oh yeah&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;that pi became the first real piece of the homelab, running pihole (i&amp;#39;m fed up with ads) and wireguard so i could vpn in from anywhere once everything else came online. pihole won&amp;#39;t touch youtube ads though, brave handles those instead.&lt;&#x2F;p&gt;
 &lt;p&gt;for compute, i pulled my old toshiba laptop out of the closet and turned it into my proxmox box &#x2F; lab manager. not sure it&amp;#39;s the wisest long-term call, but it&amp;#39;s what i had lying around. well... now that i have all this i should probably figure out how to put the cisco asa 5512-x to use instead of letting it sit there without a rack. i&amp;#39;ll probably improvise a rack by buying stuff from ikea. once that&amp;#39;s sorted i&amp;#39;ll basically have a full stack, minus a nas and a proper workstation. those are getting bought gradually, because i&amp;#39;m a new grad and my bank account would like a word... or who knows maybe i&amp;#39;ll buy the server that my boss is selling.&lt;&#x2F;p&gt;
 </content>
@@ -130,60 +173,14 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ymiuraaa.github.io/blog/math-typesetting/"/>
-        <id>https://ymiuraaa.github.io/blog/math-typesetting/</id>
+        <link rel="alternate" type="text/html" href="https://ymiuraaa.github.io/preprints/math-typesetting/"/>
+        <id>https://ymiuraaa.github.io/preprints/math-typesetting/</id>
         
-        <content type="html" xml:base="https://ymiuraaa.github.io/blog/math-typesetting/">&lt;p&gt;Recall from elementary school the generalized Stokes&#x27; theorem: for an orientable manifold $M$ and differential form $\omega$,&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://ymiuraaa.github.io/preprints/math-typesetting/">&lt;p&gt;Recall from elementary school the generalized Stokes&#x27; theorem: for an orientable manifold $M$ and differential form $\omega$,&lt;&#x2F;p&gt;
 &lt;p&gt;$$
 \int_{\partial M} \omega = \int_M d\omega.
 $$&lt;&#x2F;p&gt;
 </content>
-        
-    </entry>
-    <entry xml:lang="en">
-        <title>Shortcodes</title>
-        <published>2025-06-07T00:00:00+00:00</published>
-        <updated>2025-06-07T00:00:00+00:00</updated>
-        
-        <author>
-          <name>
-            Eyal Kalderon
-          </name>
-        </author>
-        
-        <author>
-          <name>
-            John Smith
-          </name>
-        </author>
-        
-        <link rel="alternate" type="text/html" href="https://ymiuraaa.github.io/blog/shortcodes/"/>
-        <id>https://ymiuraaa.github.io/blog/shortcodes/</id>
-        
-        <summary type="html">&lt;p&gt;This theme includes some useful custom shortcodes that you can use to enhance
-your posts. Whether you want to display a gallery of images, or format a
-professional-looking reference section, these custom shortcodes have got you
-covered.&lt;&#x2F;p&gt;
-</summary>
-        
-    </entry>
-    <entry xml:lang="en">
-        <title>Markdown Syntax Guide</title>
-        <published>2025-05-18T00:00:00+00:00</published>
-        <updated>2025-06-17T00:00:00+00:00</updated>
-        
-        <author>
-          <name>
-            
-              Yamato Miura
-            
-          </name>
-        </author>
-        
-        <link rel="alternate" type="text/html" href="https://ymiuraaa.github.io/blog/markdown/"/>
-        <id>https://ymiuraaa.github.io/blog/markdown/</id>
-        
-        <content type="html" xml:base="https://ymiuraaa.github.io/blog/markdown/"></content>
         
     </entry>
 </feed>
