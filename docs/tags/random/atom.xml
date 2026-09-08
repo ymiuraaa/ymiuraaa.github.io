@@ -5,8 +5,51 @@
     <link rel="self" type="application/atom+xml" href="https://ymiuraaa.github.io/tags/random/atom.xml"/>
     <link rel="alternate" type="text/html" href="https://ymiuraaa.github.io"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2026-08-29T00:00:00+00:00</updated>
+    <updated>2026-09-08T00:00:00+00:00</updated>
     <id>https://ymiuraaa.github.io/tags/random/atom.xml</id>
+    <entry xml:lang="en">
+        <title>b2b lacroix flavor ranking as a service</title>
+        <published>2026-09-08T00:00:00+00:00</published>
+        <updated>2026-09-08T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Yamato Miura
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://ymiuraaa.github.io/preprints/lacroix-ranking-aas/"/>
+        <id>https://ymiuraaa.github.io/preprints/lacroix-ranking-aas/</id>
+        
+        <content type="html" xml:base="https://ymiuraaa.github.io/preprints/lacroix-ranking-aas/">&lt;p&gt;the actual ranking lives at &lt;a class=&quot;external&quot; rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;ymiuraaa.github.io&#x2F;lacroix&quot;&gt;ymiuraaa.github.io&#x2F;lacroix&lt;&#x2F;a&gt;, a separate zola project (&lt;a class=&quot;external&quot; rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ymiuraaa&#x2F;lacroix&quot;&gt;source&lt;&#x2F;a&gt;) styled as a 1:1 clone of &lt;a class=&quot;external&quot; rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;cs.nyu.edu&#x2F;~fouhey&#x2F;fun&#x2F;lacroix&#x2F;&quot;&gt;prof. david fouhey&#x27;s ranking&lt;&#x2F;a&gt;. comic sans, weird cursor, all of it. you are now reading the &quot;making of&quot; featurette. there is no dvd. this is the whole bonus feature.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;img&#x2F;lacroix&#x2F;lacroix-sneakpeak.png&quot; alt=&quot;sneak-peak&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;&quot;&gt;flavors are just markdown, the layout is a css trick&lt;a class=&quot;post-anchor&quot; href=&quot;#&quot; aria-label=&quot;Anchor link for: &quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;no custom data structures. no frontmatter arrays. just vibes, and markdown. a flavor entry is exactly this:&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #F8F8F2; background-color: #272822;&quot;&gt;&lt;code data-lang=&quot;markdown&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;![&lt;&#x2F;span&gt;&lt;span style=&quot;color: #AE81FF;&quot;&gt;flavor name&lt;&#x2F;span&gt;&lt;span&gt;](&lt;&#x2F;span&gt;&lt;span style=&quot;color: #E6DB74;&quot;&gt;images&#x2F;flavor-name.png&lt;&#x2F;span&gt;&lt;span&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #66D9EF;font-weight: bold;&quot;&gt;**flavor name**&lt;&#x2F;span&gt;&lt;span&gt;:&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;a short review of the flavor.&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;grouped under &lt;code&gt;## ⭐⭐⭐⭐⭐&lt;&#x2F;code&gt; style headings, because apparently sparkling water deserved a five-tier ranking system. the template doesn&amp;#39;t loop over anything. it just hands &lt;code&gt;section.content | safe&lt;&#x2F;code&gt; to the page and walks away. zola sorts it out anyway, which feels like it shouldn&amp;#39;t work, but does.&lt;&#x2F;p&gt;
+&lt;p&gt;the actual layout comes from one css selector:&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #F8F8F2; background-color: #272822;&quot;&gt;&lt;code data-lang=&quot;css&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F92672;&quot;&gt;p&lt;&#x2F;span&gt;&lt;span style=&quot;color: #A6E22E;&quot;&gt;:has&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F92672;&quot;&gt;&amp;gt; img&lt;&#x2F;span&gt;&lt;span&gt;) {&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #66D9EF;font-style: italic;&quot;&gt;    display&lt;&#x2F;span&gt;&lt;span&gt;:&lt;&#x2F;span&gt;&lt;span style=&quot;color: #66D9EF;&quot;&gt; inline-block&lt;&#x2F;span&gt;&lt;span&gt;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #66D9EF;font-style: italic;&quot;&gt;    width&lt;&#x2F;span&gt;&lt;span&gt;:&lt;&#x2F;span&gt;&lt;span style=&quot;color: #AE81FF;&quot;&gt; 670&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F92672;&quot;&gt;px&lt;&#x2F;span&gt;&lt;span&gt;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #66D9EF;font-style: italic;&quot;&gt;    text-align&lt;&#x2F;span&gt;&lt;span&gt;:&lt;&#x2F;span&gt;&lt;span style=&quot;color: #66D9EF;&quot;&gt; left&lt;&#x2F;span&gt;&lt;span&gt;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;that&amp;#39;s it. that&amp;#39;s the whole template. i want to tell you something more technically impressive happened here, but no. css did all the work while i stood nearby, sipping passionfruit flavor lacroix and taking credit.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;-1&quot;&gt;turning a random photo into a matching flavor image&lt;a class=&quot;post-anchor&quot; href=&quot;#-1&quot; aria-label=&quot;Anchor link for: -1&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;grabbing a can photo off the internet and making it match the others (background gone, cropped tight, exact same size) is handled by a script i named &lt;code&gt;pewpew&lt;&#x2F;code&gt;. i would like to say the name reflects some deep architectural philosophy. it does not. you run it like this:&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #F8F8F2; background-color: #272822;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #A6E22E;&quot;&gt;.&#x2F;pewpew&lt;&#x2F;span&gt;&lt;span style=&quot;color: #E6DB74;&quot;&gt; static&#x2F;images&#x2F;new-flavor.jpg&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;and it flood-fills the background to transparent from the corner, crops to whatever&amp;#39;s left, resizes it to a fixed size, and saves a png next to the original. no manual cropping, no fighting with an image editor at 1am questioning your choices. drop the output path into the markdown and you&amp;#39;re done.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;you feel weirdly at peace with css selectors now.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
     <entry xml:lang="en">
         <title>first unhinged fresh side quest entry</title>
         <published>2026-08-29T00:00:00+00:00</published>
