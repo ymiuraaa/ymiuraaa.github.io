@@ -14,6 +14,5 @@ Lately I've been drifting toward the ML / research engineer side of things. More
 
 Reach out to me if you want to talk. If you're reading this site, you likely have at least one way to contact me already.
 
-You probably found this through LinkedIn, or you've been poking around my GitHub. 
-
 This is a spot for whatever I'm into: computer graphics, reinforcement learning, homelabbing, cars, art, music instruments, and whatever side quest I'm currently on :D
+This is mostly for personal documentation purposes.

@@ -1,6 +1,9 @@
 +++
 title = "b2b lacroix flavor ranking as a service"
 date = 2026-09-08
+
+[taxonomies]
+tags = ["random"]
 +++
 
 the actual ranking lives at [ymiuraaa.github.io/lacroix](https://ymiuraaa.github.io/lacroix), a separate zola project ([source](https://github.com/ymiuraaa/lacroix)) styled as a 1:1 clone of [prof. david fouhey's ranking](https://cs.nyu.edu/~fouhey/fun/lacroix/). comic sans, weird cursor, all of it. you are now reading the "making of" featurette. there is no dvd. this is the whole bonus feature.
