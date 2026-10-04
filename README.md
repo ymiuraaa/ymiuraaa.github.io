@@ -80,11 +80,27 @@ zola check
 
 pushes to `main` trigger `.github/workflows/deploy.yml`, which installs zola
 0.22.1 in ci, runs `zola build`, and publishes `public/` straight to github
-pages. no build output is ever committed to this repo. `public/` stays
-gitignored.
+pages. no build output is ever committed to this repo. `public/` and `docs/`
+stay gitignored.
 
-this requires the repo's pages source (settings → pages) to be set to
-**github actions**, not "deploy from a branch".
+### setting up github pages
+
+1. on github, go to the repo's **settings → pages**.
+2. under **build and deployment → source**, pick **github actions**.
+3. push to `main` (or run the workflow manually from the **actions** tab).
+4. check the **actions** tab: there should be exactly one run per push,
+   named `deploy zola site to github pages`.
+
+if you also see a run called `pages build and deployment`, the source is
+still set to "deploy from a branch". that's github's built-in deploy, and it
+publishes whatever is committed (e.g. an old `docs/` folder) instead of the
+`zola build` output. the two deploys race each other, so the live site ends
+up being whichever finished last. switch the source to github actions and it
+goes away.
+
+don't build into `docs/` (`zola build -o docs`) or commit build output. a
+plain `zola build` or `zola serve` locally is all you need. ci does the real
+build.
 
 ## structure
 
