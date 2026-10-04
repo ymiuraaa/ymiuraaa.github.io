@@ -4,6 +4,33 @@ personal site, built with [zola](https://www.getzola.org/), a fast static
 site generator written in rust. zola takes the markdown files in `content/`
 plus a theme (templates + css) and compiles the whole thing into plain html. no build step, no js framework, no server required to run it.
 
+## using this as a template
+
+this branch is a stripped-down copy of the site with placeholder content.
+to start your own:
+
+1. create a repo named `<your-username>.github.io` (or any name, for a
+   project site at `<your-username>.github.io/<repo>/`).
+2. clone this branch into it with the theme submodule:
+
+   ```bash
+   git clone --recurse-submodules -b template <this-repo-url> my-site
+   cd my-site
+   git checkout -b main
+   git remote set-url origin <your-repo-url>
+   ```
+
+3. in `config.toml`, replace `Your Name` and `<your-username>`, and set
+   `base_url` to where the site will live.
+4. replace the example pages in `content/` and the placeholder image in
+   `static/img/` with your own.
+5. run `zola serve` to preview, then push to `main`.
+6. set settings → pages → source to **github actions** (see
+   [setting up github pages](#setting-up-github-pages)).
+
+`robots.txt` blocks all crawlers, including search engines. delete or edit
+it if you want the site to be indexed.
+
 ## theme
 
 the theme ([terminus](https://github.com/ebkalderon/terminus)) lives in

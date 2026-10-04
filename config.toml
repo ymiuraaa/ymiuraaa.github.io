@@ -2,10 +2,10 @@
 theme = "terminus"
 
 # The URL the site will be built for
-base_url = "https://ymiuraaa.github.io"
+base_url = "https://<your-username>.github.io"
 
 # The site title and description; used in feeds by default.
-title = "Yamato Miura"
+title = "Your Name"
 description = "Personal/Academic Website"
 
 # Whether to automatically compile all Sass files in the sass directory
@@ -15,7 +15,7 @@ compile_sass = true
 generate_feeds = true
 
 # The default author for pages
-author = "Yamato Miura"
+author = "Your Name"
 
 # The taxonomies to be rendered for the site and their configuration of the default languages
 # Example:
@@ -71,7 +71,6 @@ theme = "monokai-classic"
 close_responsive_menu_on_resize = true
 color_scheme = "synthwave-84"
 favicon_emoji = "🌙"
-fediverse_creator = "@ebkalderon@hachyderm.io"
 feed_icon = true
 layout = "center"
 show_default_author = false
@@ -84,7 +83,7 @@ main_menu = [
 ]
 
 socials = [
-    { name = "github", url = "https://github.com/ymiuraaa" },
+    { name = "github", url = "https://github.com/<your-username>" },
 ]
 
 [extra.content_security_policy]

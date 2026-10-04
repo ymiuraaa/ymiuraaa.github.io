@@ -7,14 +7,7 @@ framed = true
 
 # Side Quests
 
-this is where you can find some of my side quests.
-there's two types of side quests: 
-
-one that's more technical
-
-one that will make you go "huh???" and be weirded out :skull:
-
-check them out!
+this is where side projects go. tag each one so it shows up below.
 
 ## [technical](/tags/technical/)
 ## [random](/tags/random/)
