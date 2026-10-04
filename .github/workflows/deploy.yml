@@ -16,6 +16,9 @@ concurrency:
 
 jobs:
   build:
+    # main in the original repo holds this template, not a real site, so never
+    # deploy it there. in your own copy this is always true. you can delete it.
+    if: github.repository != 'ymiuraaa/ymiuraaa.github.io'
     runs-on: ubuntu-latest
     env:
       ZOLA_VERSION: "0.22.1"

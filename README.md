@@ -14,9 +14,8 @@ to start your own:
 2. clone this branch into it with the theme submodule:
 
    ```bash
-   git clone --recurse-submodules -b template <this-repo-url> my-site
+   git clone --recurse-submodules <this-repo-url> my-site
    cd my-site
-   git checkout -b main
    git remote set-url origin <your-repo-url>
    ```
 
