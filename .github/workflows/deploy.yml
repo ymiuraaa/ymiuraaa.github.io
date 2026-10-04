@@ -2,7 +2,7 @@ name: deploy zola site to github pages
 
 on:
   push:
-    branches: ["main"]
+    branches: ["personal-branch"]
   workflow_dispatch:
 
 permissions:

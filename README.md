@@ -78,16 +78,22 @@ zola check
 
 ## deployment
 
-pushes to `main` trigger `.github/workflows/deploy.yml`, which installs zola
+pushes to `personal-branch` trigger `.github/workflows/deploy.yml`, which installs zola
 0.22.1 in ci, runs `zola build`, and publishes `public/` straight to github
 pages. no build output is ever committed to this repo. `public/` and `docs/`
 stay gitignored.
+
+the site lives on `personal-branch`. `main` holds a stripped-down template
+version and never deploys.
+
+needs settings → environments → github-pages → deployment branches to allow
+`personal-branch`, otherwise the deploy job gets rejected.
 
 ### setting up github pages
 
 1. on github, go to the repo's **settings → pages**.
 2. under **build and deployment → source**, pick **github actions**.
-3. push to `main` (or run the workflow manually from the **actions** tab).
+3. push to `personal-branch` (or run the workflow manually from the **actions** tab).
 4. check the **actions** tab: there should be exactly one run per push,
    named `deploy zola site to github pages`.
 
