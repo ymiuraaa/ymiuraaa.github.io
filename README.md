@@ -6,12 +6,12 @@ plus a theme (templates + css) and compiles the whole thing into plain html. no 
 
 ## using this as a template
 
-this branch is a stripped-down copy of the site with placeholder content.
+this repo is a stripped-down copy of the site with placeholder content.
 to start your own:
 
 1. create a repo named `<your-username>.github.io` (or any name, for a
    project site at `<your-username>.github.io/<repo>/`).
-2. clone this branch into it with the theme submodule:
+2. clone it with the theme submodule:
 
    ```bash
    git clone --recurse-submodules <this-repo-url> my-site
